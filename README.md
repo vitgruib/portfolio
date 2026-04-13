@@ -33,22 +33,19 @@ Open [http://localhost:3000](http://localhost:3000).
 - **Copy:** Update the home, projects, and about pages under [`src/app/`](src/app/).
 - **Contact / social:** Adjust links in [`src/components/SiteFooter.tsx`](src/components/SiteFooter.tsx) and the about page.
 
-## Production metadata
+## Production metadata (site URL)
 
-For correct Open Graph URLs when sharing your site, set the public site URL:
+**You do not need any environment variable on Vercel** for the default `*.vercel.app` URL. Vercel injects `VERCEL_URL` automatically; the app builds absolute Open Graph / `metadataBase` URLs from it (see [`src/lib/site-url.ts`](src/lib/site-url.ts)).
 
-1. Copy `.env.example` to `.env.local`.
-2. Set `NEXT_PUBLIC_SITE_URL` to your production URL (e.g. `https://your-app.vercel.app`).
-
-On Vercel, add the same variable under **Project → Settings → Environment Variables** for **Production** (and Preview if you want previews to use a stable preview URL).
+**Optional:** Set `NEXT_PUBLIC_SITE_URL` in `.env.local` (local) or in Vercel **Environment Variables** if you use a **custom domain** and want shared previews and social cards to use that domain instead of the `vercel.app` host.
 
 ## Deploy to Vercel
 
 1. Push this repository to GitHub (or GitLab / Bitbucket).
 2. In Vercel, choose **Add New… → Project** and import the repo.
 3. Framework preset **Next.js** should be detected automatically.
-4. Add `NEXT_PUBLIC_SITE_URL` if you use a custom domain or want exact OG URLs.
-5. Deploy. Every push to the connected branch can trigger a new production or preview deployment.
+4. Deploy—no env vars required for a standard setup.
+5. Every push to the connected branch can trigger a new production or preview deployment.
 
 ## Scripts
 
