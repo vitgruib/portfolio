@@ -13,9 +13,28 @@ export default function HomePage() {
           I build thoughtful interfaces and reliable systems.
         </h1>
         <p className="text-lg leading-relaxed text-zinc-400">
-          This portfolio highlights a few projects: dashboards, APIs, and
-          developer tooling. Replace this copy with your story, then update
-          links and screenshots in{" "}
+          Short version: I ship web apps, APIs, and small tools—see{" "}
+          <Link
+            href="/tools"
+            className="text-zinc-200 underline decoration-zinc-600 underline-offset-4 transition hover:text-white hover:decoration-zinc-400 focus-visible:focus-ring rounded-sm"
+          >
+            Tools
+          </Link>
+          ,{" "}
+          <Link
+            href="/funsies"
+            className="text-zinc-200 underline decoration-zinc-600 underline-offset-4 transition hover:text-white hover:decoration-zinc-400 focus-visible:focus-ring rounded-sm"
+          >
+            Funsies
+          </Link>
+          , and a bit more on{" "}
+          <Link
+            href="/about"
+            className="text-zinc-200 underline decoration-zinc-600 underline-offset-4 transition hover:text-white hover:decoration-zinc-400 focus-visible:focus-ring rounded-sm"
+          >
+            About
+          </Link>
+          . Edit copy and projects in{" "}
           <code className="rounded bg-surface-muted px-1.5 py-0.5 font-mono text-sm text-zinc-300">
             src/data/projects.ts
           </code>
@@ -23,10 +42,16 @@ export default function HomePage() {
         </p>
         <div className="flex flex-wrap gap-4">
           <Link
-            href="/projects"
+            href="/tools"
             className="rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-white transition hover:bg-accent-hover focus-visible:focus-ring"
           >
-            View all projects
+            Tools
+          </Link>
+          <Link
+            href="/funsies"
+            className="rounded-lg border border-surface-border px-5 py-2.5 text-sm font-medium text-zinc-200 transition hover:border-zinc-500 hover:bg-surface-muted focus-visible:focus-ring"
+          >
+            Funsies
           </Link>
           <Link
             href="/about"
@@ -39,13 +64,9 @@ export default function HomePage() {
 
       <section className="space-y-8">
         <div className="flex items-end justify-between gap-4">
-          <h2 className="text-xl font-semibold text-zinc-100">Featured</h2>
-          <Link
-            href="/featured"
-            className="text-sm text-accent transition hover:text-accent-hover focus-visible:focus-ring rounded-sm"
-          >
-            Featured page
-          </Link>
+          <h2 className="text-xl font-semibold text-zinc-100">
+            Featured projects
+          </h2>
         </div>
         <div className="grid gap-8 md:grid-cols-2">
           {featured.map((project) => (

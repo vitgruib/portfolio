@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projectsInCategory } from "@/data/projects";
 
@@ -29,12 +28,6 @@ export default function FunsiesPage() {
           </code>{" "}
           so they show up here—not buried in &quot;serious&quot; work.
         </p>
-        <Link
-          href="/projects"
-          className="inline-block text-sm text-accent transition hover:text-accent-hover focus-visible:focus-ring rounded-sm"
-        >
-          All projects →
-        </Link>
       </header>
       <div className="grid gap-8 md:grid-cols-2">
         {items.map((project) => (
