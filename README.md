@@ -5,6 +5,18 @@ A personal developer portfolio built with [Next.js](https://nextjs.org/) (App Ro
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) 20.x or newer (includes `npm`)
+- [Git](https://git-scm.com/) (this repo is initialized on branch `main` with an initial commit)
+
+## Connect to GitHub
+
+Create an empty repository on GitHub (no README/license if you already have this project locally), then:
+
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git push -u origin main
+```
+
+Use your real URL (HTTPS or SSH). After the first push, connect the repo in Vercel as described below.
 
 ## Local development
 
