@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
-  <rect width="800" height="500" fill="#0c0c0f"/>
-  <rect x="64" y="64" width="672" height="372" rx="10" fill="#14141a" stroke="#262630" stroke-width="1"/>
-  <text x="88" y="120" fill="#a5b4fc" font-family="ui-monospace, monospace" font-size="18">$ portfolio init</text>
-  <text x="88" y="160" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="16">  Creating project&</text>
-  <text x="88" y="200" fill="#22c55e" font-family="ui-monospace, monospace" font-size="16">  Done in 1.2s</text>
+  <rect width="800" height="500" fill="#e5d9ce"/>
+  <rect x="64" y="64" width="672" height="372" rx="10" fill="#fffcf7" stroke="#d4c4b5" stroke-width="1"/>
+  <text x="88" y="120" fill="#a84a2d" font-family="ui-monospace, monospace" font-size="18">$ portfolio init</text>
+  <text x="88" y="160" fill="#6e5f54" font-family="ui-monospace, monospace" font-size="16">  Creating project…</text>
+  <text x="88" y="200" fill="#5c6b4a" font-family="ui-monospace, monospace" font-size="16">  Done in 1.2s</text>
 </svg>

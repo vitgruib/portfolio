@@ -1,20 +1,24 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { IBM_Plex_Mono, Inter } from "next/font/google";
+import { Fraunces, JetBrains_Mono, Nunito_Sans } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
-const inter = Inter({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-fraunces",
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
-  weight: ["400", "500"],
+const nunito = Nunito_Sans({
   subsets: ["latin"],
-  variable: "--font-geist-mono",
+  variable: "--font-nunito",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
 });
 
 const siteUrl = getSiteUrl();
@@ -53,10 +57,13 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${ibmPlexMono.variable}`}>
-      <body className="flex min-h-screen flex-col font-sans">
+    <html
+      lang="en"
+      className={`${fraunces.variable} ${nunito.variable} ${jetbrains.variable}`}
+    >
+      <body className="flex min-h-screen flex-col">
         <SiteHeader />
-        <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-12">
+        <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-12 sm:py-16">
           {children}
         </main>
         <SiteFooter />

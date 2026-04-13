@@ -17,23 +17,24 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: 80,
-          background: "#0c0c0f",
-          color: "#f4f4f5",
-          fontFamily: "ui-sans-serif, system-ui, sans-serif",
+          background: "linear-gradient(145deg, #f7f0e8 0%, #e8ddd2 45%, #dccdbf 100%)",
+          color: "#1c1410",
+          fontFamily: "Georgia, serif",
         }}
       >
         <div
           style={{
             fontSize: 56,
             fontWeight: 600,
+            fontStyle: "italic",
             letterSpacing: -0.02,
             marginBottom: 24,
           }}
         >
           Portfolio
         </div>
-        <div style={{ fontSize: 28, color: "#a1a1aa", maxWidth: 720 }}>
-          Projects, stack, and links—built with Next.js
+        <div style={{ fontSize: 28, color: "#5e4d42", maxWidth: 720 }}>
+          Cozy corner of the internet — projects & links
         </div>
       </div>
     ),

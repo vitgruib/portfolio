@@ -3,15 +3,36 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
-  @apply min-h-screen bg-surface text-zinc-100 antialiased;
+  @apply min-h-screen font-sans text-cozy-espresso antialiased;
+  background-color: #f0e6dc;
+  background-image:
+    radial-gradient(
+      ellipse 120% 80% at 50% -20%,
+      rgb(255 252 247 / 0.95),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 100% 0%,
+      rgb(232 217 206 / 0.5),
+      transparent 45%
+    ),
+    radial-gradient(circle at 0% 100%, rgb(229 217 206 / 0.4), transparent 50%);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    @apply font-serif tracking-tight text-cozy-espresso;
+  }
 }
 
 @layer utilities {
   .focus-ring {
-    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-surface;
+    @apply outline-none ring-2 ring-cozy-accent ring-offset-2 ring-offset-cozy-cream;
   }
 }

@@ -30,8 +30,8 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Customize
 
 - **Projects:** Edit [`src/data/projects.ts`](src/data/projects.ts) (titles, descriptions, stack tags, GitHub and demo URLs). Replace placeholder images in [`public/projects/`](public/projects/) with your own screenshots (PNG/JPEG/WebP work well with `next/image`).
-- **Copy:** Update the home, tools, funsies, and about pages under [`src/app/`](src/app/).
-- **Contact / social:** Adjust links in [`src/components/SiteFooter.tsx`](src/components/SiteFooter.tsx) and the about page.
+- **Copy:** Update the home, tools, and funsies pages under [`src/app/`](src/app/).
+- **Contact / social:** Adjust links in [`src/components/SiteFooter.tsx`](src/components/SiteFooter.tsx) (and your intro on the home page).
 
 ## Production metadata (site URL)
 

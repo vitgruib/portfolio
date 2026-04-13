@@ -5,37 +5,37 @@ type Props = { project: Project };
 
 export function ProjectCard({ project }: Props) {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-xl border border-surface-border bg-surface-muted transition hover:border-zinc-600">
-      <div className="relative aspect-[8/5] w-full overflow-hidden bg-surface">
+    <article className="group flex flex-col overflow-hidden rounded-2xl border border-cozy-border/90 bg-cozy-cream shadow-cozy-sm transition duration-300 hover:border-cozy-wood/50 hover:shadow-cozy">
+      <div className="relative aspect-[8/5] w-full overflow-hidden bg-cozy-latte">
         <Image
           src={project.imageSrc}
           alt={project.title}
           width={800}
           height={500}
-          className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          className="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-[1.03]"
           unoptimized
         />
       </div>
-      <div className="flex flex-1 flex-col gap-3 p-5">
-        <h2 className="text-lg font-semibold tracking-tight text-zinc-50">
+      <div className="flex flex-1 flex-col gap-3 p-5 sm:p-6">
+        <h2 className="font-serif text-xl font-medium text-cozy-espresso">
           {project.title}
         </h2>
-        <p className="flex-1 text-sm leading-relaxed text-zinc-400">
+        <p className="flex-1 text-sm leading-relaxed text-cozy-muted">
           {project.description}
         </p>
         <ul className="flex flex-wrap gap-2" aria-label="Tech stack">
           {project.stack.map((tag) => (
             <li key={tag}>
-              <span className="rounded-md bg-surface px-2 py-0.5 font-mono text-xs text-accent-hover">
+              <span className="rounded-full bg-cozy-latte/90 px-3 py-0.5 font-mono text-xs text-cozy-mocha">
                 {tag}
               </span>
             </li>
           ))}
         </ul>
-        <div className="flex flex-wrap gap-4 pt-1">
+        <div className="flex flex-wrap gap-5 border-t border-cozy-border/60 pt-4">
           <a
             href={project.githubUrl}
-            className="text-sm font-medium text-accent transition hover:text-accent-hover focus-visible:focus-ring rounded-sm"
+            className="text-sm font-semibold text-cozy-accent transition hover:text-cozy-accent-hover focus-visible:focus-ring rounded-sm"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -44,7 +44,7 @@ export function ProjectCard({ project }: Props) {
           {project.liveUrl ? (
             <a
               href={project.liveUrl}
-              className="text-sm font-medium text-zinc-300 transition hover:text-white focus-visible:focus-ring rounded-sm"
+              className="text-sm font-semibold text-cozy-mocha transition hover:text-cozy-espresso focus-visible:focus-ring rounded-sm"
               rel="noopener noreferrer"
               target="_blank"
             >

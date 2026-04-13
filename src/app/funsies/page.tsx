@@ -14,16 +14,17 @@ export default function FunsiesPage() {
   return (
     <div className="space-y-10">
       <header className="max-w-2xl space-y-3">
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
-          Funsies
-        </h1>
-        <p className="text-zinc-400">
+        <p className="font-mono text-sm font-medium text-cozy-leaf">
+          Extra foam
+        </p>
+        <h1 className="text-3xl sm:text-4xl">Funsies</h1>
+        <p className="text-cozy-muted">
           Side quests and joy projects. Use{" "}
-          <code className="rounded bg-surface-muted px-1.5 py-0.5 font-mono text-sm text-zinc-300">
+          <code className="rounded-md bg-cozy-latte/90 px-2 py-0.5 font-mono text-sm text-cozy-mocha">
             category: &quot;funsies&quot;
           </code>{" "}
           in{" "}
-          <code className="rounded bg-surface-muted px-1.5 py-0.5 font-mono text-sm text-zinc-300">
+          <code className="rounded-md bg-cozy-latte/90 px-2 py-0.5 font-mono text-sm text-cozy-mocha">
             src/data/projects.ts
           </code>{" "}
           so they show up here—not buried in &quot;serious&quot; work.

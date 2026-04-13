@@ -4,16 +4,15 @@ const nav = [
   { href: "/", label: "Home" },
   { href: "/tools", label: "Tools" },
   { href: "/funsies", label: "Funsies" },
-  { href: "/about", label: "About" },
 ] as const;
 
 export function SiteHeader() {
   return (
-    <header className="border-b border-surface-border bg-surface/80 backdrop-blur-md">
+    <header className="border-b border-cozy-border/80 bg-cozy-cream/85 shadow-cozy-sm backdrop-blur-md">
       <div className="mx-auto flex h-auto min-h-16 max-w-5xl flex-col gap-3 px-6 py-3 sm:flex-row sm:items-center sm:justify-between sm:py-0">
         <Link
           href="/"
-          className="font-mono text-sm font-medium tracking-tight text-zinc-100 transition hover:text-accent-hover"
+          className="font-serif text-lg font-medium italic tracking-tight text-cozy-espresso transition hover:text-cozy-accent"
         >
           portfolio
         </Link>
@@ -25,7 +24,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-zinc-400 transition hover:text-zinc-100 focus-visible:focus-ring rounded-sm"
+              className="text-sm font-medium text-cozy-mocha transition hover:text-cozy-espresso focus-visible:focus-ring rounded-full px-1"
             >
               {item.label}
             </Link>
