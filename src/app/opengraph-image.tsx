@@ -17,8 +17,8 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: 80,
-          background: "linear-gradient(145deg, #f7f0e8 0%, #e8ddd2 45%, #dccdbf 100%)",
-          color: "#1c1410",
+          background: "linear-gradient(145deg, #fdf8f3 0%, #f5ebe0 45%, #e6d5c3 100%)",
+          color: "#1a1210",
           fontFamily: "Georgia, serif",
         }}
       >
@@ -33,8 +33,8 @@ export default function OpenGraphImage() {
         >
           Portfolio
         </div>
-        <div style={{ fontSize: 28, color: "#5e4d42", maxWidth: 720 }}>
-          Cozy corner of the internet — projects & links
+        <div style={{ fontSize: 28, color: "#7a6455", maxWidth: 720 }}>
+          Projects, experiments & things I&apos;ve been brewing
         </div>
       </div>
     ),

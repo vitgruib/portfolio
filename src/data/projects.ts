@@ -1,4 +1,4 @@
-export type ProjectCategory = "featured" | "tools" | "funsies";
+export type ProjectCategory = "projects" | "just-for-fun";
 export type ProjectStatus = "WIP" | "Fork";
 
 export type Project = {
@@ -16,6 +16,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "portfolio",
+    title: "Portfolio",
+    description:
+      "This website — a boba-themed developer portfolio built with Next.js and Tailwind CSS, deployed on Vercel.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    githubUrl: "https://github.com/vitgruib/portfolio",
+    imageSrc: "/projects/dashboard.svg",
+    category: "projects",
+  },
+  {
     slug: "todo",
     title: "Todo AI Extension",
     description:
@@ -24,7 +34,7 @@ export const projects: Project[] = [
     status: "WIP",
     githubUrl: "https://github.com/vitgruib/todo",
     imageSrc: "/projects/api.svg",
-    category: "tools",
+    category: "projects",
   },
   {
     slug: "shambo",
@@ -35,7 +45,7 @@ export const projects: Project[] = [
     status: "WIP",
     githubUrl: "https://github.com/vitgruib/shambo",
     imageSrc: "/projects/cli.svg",
-    category: "tools",
+    category: "projects",
   },
   {
     slug: "human-benchmark-3d",
@@ -46,7 +56,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Ethanc143/Human-Benchmark-3D",
     liveUrl: "https://sidequestvr.com/app/45060/vr-memory-test",
     imageSrc: "/projects/api.svg",
-    category: "tools",
+    category: "projects",
   },
   {
     slug: "sat0ru",
@@ -57,7 +67,7 @@ export const projects: Project[] = [
     status: "Fork",
     githubUrl: "https://github.com/vitgruib/SAT0RU",
     imageSrc: "/projects/funsies.svg",
-    category: "funsies",
+    category: "just-for-fun",
   },
   {
     slug: "the-hunt-begins",
@@ -68,7 +78,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/vitgruib/The-Hunt-Begins",
     liveUrl: "https://play.unity.com/en/games/cf737ef2-ad5d-42c0-bf45-ff624616acf0/simple-boss-fights",
     imageSrc: "/projects/funsies.svg",
-    category: "funsies",
+    category: "just-for-fun",
   },
 ];
 

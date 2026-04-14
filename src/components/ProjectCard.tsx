@@ -5,8 +5,8 @@ type Props = { project: Project };
 
 export function ProjectCard({ project }: Props) {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-cozy-border/90 bg-cozy-cream shadow-cozy-sm transition duration-300 hover:border-cozy-wood/50 hover:shadow-cozy">
-      <div className="relative aspect-[8/5] w-full overflow-hidden bg-cozy-latte">
+    <article className="group flex flex-col overflow-hidden rounded-2xl border border-boba-border/90 bg-boba-cream shadow-boba-sm transition duration-300 hover:border-boba-wood/50 hover:shadow-boba">
+      <div className="relative aspect-[8/5] w-full overflow-hidden bg-boba-latte">
         <Image
           src={project.imageSrc}
           alt={project.title}
@@ -18,7 +18,7 @@ export function ProjectCard({ project }: Props) {
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5 sm:p-6">
         <div className="flex items-center gap-2">
-          <h2 className="font-serif text-xl font-medium text-cozy-espresso">
+          <h2 className="font-serif text-xl font-medium text-boba-espresso">
             {project.title}
           </h2>
           {project.status && (
@@ -33,22 +33,22 @@ export function ProjectCard({ project }: Props) {
             </span>
           )}
         </div>
-        <p className="flex-1 text-sm leading-relaxed text-cozy-muted">
+        <p className="flex-1 text-sm leading-relaxed text-boba-muted">
           {project.description}
         </p>
         <ul className="flex flex-wrap gap-2" aria-label="Tech stack">
           {project.stack.map((tag) => (
             <li key={tag}>
-              <span className="rounded-full bg-cozy-latte/90 px-3 py-0.5 font-mono text-xs text-cozy-mocha">
+              <span className="rounded-full bg-boba-latte/90 px-3 py-0.5 font-mono text-xs text-boba-mocha">
                 {tag}
               </span>
             </li>
           ))}
         </ul>
-        <div className="flex flex-wrap gap-5 border-t border-cozy-border/60 pt-4">
+        <div className="flex flex-wrap gap-5 border-t border-boba-border/60 pt-4">
           <a
             href={project.githubUrl}
-            className="text-sm font-semibold text-cozy-accent transition hover:text-cozy-accent-hover focus-visible:focus-ring rounded-sm"
+            className="text-sm font-semibold text-boba-accent transition hover:text-boba-accent-hover focus-visible:focus-ring rounded-sm"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -57,7 +57,7 @@ export function ProjectCard({ project }: Props) {
           {project.liveUrl ? (
             <a
               href={project.liveUrl}
-              className="text-sm font-semibold text-cozy-mocha transition hover:text-cozy-espresso focus-visible:focus-ring rounded-sm"
+              className="text-sm font-semibold text-boba-mocha transition hover:text-boba-espresso focus-visible:focus-ring rounded-sm"
               rel="noopener noreferrer"
               target="_blank"
             >

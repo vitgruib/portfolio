@@ -9,19 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cozy: {
-          paper: "#f0e6dc",
-          cream: "#fffcf7",
-          foam: "#faf6f0",
-          latte: "#e5d9ce",
-          wood: "#c4a574",
-          espresso: "#1c1410",
-          mocha: "#4a3f36",
-          muted: "#6e5f54",
-          accent: "#a84a2d",
-          "accent-hover": "#8f3d24",
-          leaf: "#5c6b4a",
-          border: "#d4c4b5",
+        boba: {
+          paper: "#f5ebe0",
+          cream: "#fdf8f3",
+          foam: "#faf3eb",
+          latte: "#e6d5c3",
+          wood: "#b8956a",
+          espresso: "#1a1210",
+          mocha: "#4e3b2f",
+          muted: "#7a6455",
+          accent: "#7b5ea7",
+          "accent-hover": "#654b8a",
+          taro: "#9b7fc4",
+          tapioca: "#2c1e14",
+          border: "#dcc9b8",
         },
       },
       fontFamily: {
@@ -30,9 +31,8 @@ const config: Config = {
         mono: ["var(--font-jetbrains)", "ui-monospace", "monospace"],
       },
       boxShadow: {
-        cozy:
-          "0 4px 28px -6px rgb(28 20 16 / 0.12), 0 2px 8px -4px rgb(28 20 16 / 0.08)",
-        "cozy-sm":
+        boba: "0 4px 28px -6px rgb(28 20 16 / 0.12), 0 2px 8px -4px rgb(28 20 16 / 0.08)",
+        "boba-sm":
           "0 2px 14px -4px rgb(28 20 16 / 0.1), 0 1px 4px -2px rgb(28 20 16 / 0.06)",
       },
     },

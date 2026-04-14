@@ -1,23 +1,23 @@
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="mt-auto border-t border-cozy-border/90 bg-cozy-foam/90">
+    <footer className="mt-auto border-t border-boba-border/90 bg-boba-foam/90">
       <div className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm text-cozy-muted">
-          © {year} — Warm wishes & Next.js
+        <p className="text-sm text-boba-muted">
+          © {year} — Brewed with boba & Next.js
         </p>
         <div className="flex flex-wrap gap-6">
           <a
-            href="https://github.com"
-            className="text-sm font-medium text-cozy-mocha transition hover:text-cozy-accent focus-visible:focus-ring rounded-sm"
+            href="https://github.com/vitgruib"
+            className="text-sm font-medium text-boba-mocha transition hover:text-boba-accent focus-visible:focus-ring rounded-sm"
             rel="noopener noreferrer"
             target="_blank"
           >
             GitHub
           </a>
           <a
-            href="mailto:hello@example.com"
-            className="text-sm font-medium text-cozy-mocha transition hover:text-cozy-accent focus-visible:focus-ring rounded-sm"
+            href="mailto:ethanc8858@gmail.com"
+            className="text-sm font-medium text-boba-mocha transition hover:text-boba-accent focus-visible:focus-ring rounded-sm"
           >
             Email
           </a>

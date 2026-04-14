@@ -7,32 +7,32 @@
 }
 
 body {
-  @apply min-h-screen font-sans text-cozy-espresso antialiased;
-  background-color: #f0e6dc;
+  @apply min-h-screen font-sans text-boba-espresso antialiased;
+  background-color: #f5ebe0;
   background-image:
     radial-gradient(
       ellipse 120% 80% at 50% -20%,
-      rgb(255 252 247 / 0.95),
+      rgb(253 248 243 / 0.95),
       transparent 55%
     ),
     radial-gradient(
       circle at 100% 0%,
-      rgb(232 217 206 / 0.5),
+      rgb(230 213 195 / 0.5),
       transparent 45%
     ),
-    radial-gradient(circle at 0% 100%, rgb(229 217 206 / 0.4), transparent 50%);
+    radial-gradient(circle at 0% 100%, rgb(225 210 195 / 0.4), transparent 50%);
 }
 
 @layer base {
   h1,
   h2,
   h3 {
-    @apply font-serif tracking-tight text-cozy-espresso;
+    @apply font-serif tracking-tight text-boba-espresso;
   }
 }
 
 @layer utilities {
   .focus-ring {
-    @apply outline-none ring-2 ring-cozy-accent ring-offset-2 ring-offset-cozy-cream;
+    @apply outline-none ring-2 ring-boba-accent ring-offset-2 ring-offset-boba-cream;
   }
 }
