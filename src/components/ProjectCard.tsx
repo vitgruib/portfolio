@@ -46,14 +46,16 @@ export function ProjectCard({ project }: Props) {
           ))}
         </ul>
         <div className="flex flex-wrap gap-5 border-t border-boba-border/60 pt-4">
-          <a
-            href={project.githubUrl}
-            className="text-sm font-semibold text-boba-accent transition hover:text-boba-accent-hover focus-visible:focus-ring rounded-sm"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Source
-          </a>
+          {project.githubUrl ? (
+            <a
+              href={project.githubUrl}
+              className="text-sm font-semibold text-boba-accent transition hover:text-boba-accent-hover focus-visible:focus-ring rounded-sm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Source
+            </a>
+          ) : null}
           {project.liveUrl ? (
             <a
               href={project.liveUrl}

@@ -7,7 +7,7 @@ export type Project = {
   description: string;
   stack: string[];
   status?: ProjectStatus;
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl?: string;
   /** Path under /public, e.g. /projects/foo.svg */
   imageSrc: string;
@@ -77,6 +77,16 @@ export const projects: Project[] = [
     stack: ["Unity", "C#"],
     githubUrl: "https://github.com/vitgruib/The-Hunt-Begins",
     liveUrl: "https://play.unity.com/en/games/cf737ef2-ad5d-42c0-bf45-ff624616acf0/simple-boss-fights",
+    imageSrc: "/projects/funsies.svg",
+    category: "just-for-fun",
+  },
+  {
+    slug: "party-box",
+    title: "Charades & Imposter: Party Box",
+    description:
+      "A free, no-ads, fully offline party game app on Google Play — charades, social deduction, and more on a single phone.",
+    stack: ["Android", "Kotlin"],
+    liveUrl: "https://play.google.com/store/apps/details?id=com.vitgrub.passandplaypartygames",
     imageSrc: "/projects/funsies.svg",
     category: "just-for-fun",
   },
