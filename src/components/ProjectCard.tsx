@@ -17,9 +17,22 @@ export function ProjectCard({ project }: Props) {
         />
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5 sm:p-6">
-        <h2 className="font-serif text-xl font-medium text-cozy-espresso">
-          {project.title}
-        </h2>
+        <div className="flex items-center gap-2">
+          <h2 className="font-serif text-xl font-medium text-cozy-espresso">
+            {project.title}
+          </h2>
+          {project.status && (
+            <span
+              className={`rounded-full px-2.5 py-0.5 font-mono text-[10px] font-semibold uppercase tracking-wide ${
+                project.status === "Fork"
+                  ? "bg-violet-100 text-violet-700"
+                  : "bg-amber-100 text-amber-700"
+              }`}
+            >
+              {project.status}
+            </span>
+          )}
+        </div>
         <p className="flex-1 text-sm leading-relaxed text-cozy-muted">
           {project.description}
         </p>

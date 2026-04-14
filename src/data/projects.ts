@@ -1,10 +1,12 @@
 export type ProjectCategory = "featured" | "tools" | "funsies";
+export type ProjectStatus = "WIP" | "Fork";
 
 export type Project = {
   slug: string;
   title: string;
   description: string;
   stack: string[];
+  status?: ProjectStatus;
   githubUrl: string;
   liveUrl?: string;
   /** Path under /public, e.g. /projects/foo.svg */
@@ -14,45 +16,57 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "analytics-dashboard",
-    title: "Analytics dashboard",
+    slug: "todo",
+    title: "Todo AI Extension",
     description:
-      "A responsive dashboard for exploring metrics, cohorts, and exports—built to stay fast with large datasets.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://vercel.com",
-    imageSrc: "/projects/dashboard.svg",
-    category: "featured",
-  },
-  {
-    slug: "task-api",
-    title: "Task API",
-    description:
-      "REST-style API with validation, auth-ready routes, and OpenAPI docs for a task management backend.",
-    stack: ["Node.js", "TypeScript", "PostgreSQL"],
-    githubUrl: "https://github.com",
+      "A smart todo list extension for Chrome/Edge with drag-and-drop, sub-steps, deadlines, and a Gemma-backed AI chat companion.",
+    stack: ["TypeScript", "React", "Vite", "Gemma AI", "Node.js"],
+    status: "WIP",
+    githubUrl: "https://github.com/vitgruib/todo",
     imageSrc: "/projects/api.svg",
     category: "tools",
   },
   {
-    slug: "dev-cli",
-    title: "Dev workflow CLI",
+    slug: "shambo",
+    title: "Shambo",
     description:
-      "A small CLI that scaffolds projects and runs checks locally—fewer copy-paste steps between repos.",
-    stack: ["TypeScript", "Node.js"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://npmjs.com",
+      "Chromium extension that blocks distracting sites, auto-closes tabs, and optionally shames you with TTS—productivity through peer pressure.",
+    stack: ["JavaScript", "Chrome MV3"],
+    status: "WIP",
+    githubUrl: "https://github.com/vitgruib/shambo",
     imageSrc: "/projects/cli.svg",
     category: "tools",
   },
   {
-    slug: "pixel-doodle",
-    title: "Pixel doodle pad",
+    slug: "human-benchmark-3d",
+    title: "Human Benchmark 3D",
     description:
-      "A tiny canvas toy—draw with the keyboard, export a PNG, and share gloriously unserious art.",
-    stack: ["Canvas API", "TypeScript"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://vercel.com",
+      "VR adaptation of classic Human Benchmark tests built in Unity with XR hand tracking—reaction time, memory, and more in immersive 3D.",
+    stack: ["Unity", "C#", "XR Hands", "Meta Quest"],
+    githubUrl: "https://github.com/Ethanc143/Human-Benchmark-3D",
+    liveUrl: "https://sidequestvr.com/app/45060/vr-memory-test",
+    imageSrc: "/projects/api.svg",
+    category: "tools",
+  },
+  {
+    slug: "sat0ru",
+    title: "SAT0RU",
+    description:
+      "Fork of reinesana/SAT0RU — a real-time Jujutsu Kaisen cursed technique visualizer. Use hand gestures via MediaPipe to trigger Hollow Purple, Infinite Void, and more in 3D.",
+    stack: ["Three.js", "MediaPipe", "Gemini", "JavaScript"],
+    status: "Fork",
+    githubUrl: "https://github.com/vitgruib/SAT0RU",
+    imageSrc: "/projects/funsies.svg",
+    category: "funsies",
+  },
+  {
+    slug: "the-hunt-begins",
+    title: "The Hunt Begins",
+    description:
+      "Action boss-fight game built in Unity—dash, attack, and dodge through multi-phase encounters.",
+    stack: ["Unity", "C#"],
+    githubUrl: "https://github.com/vitgruib/The-Hunt-Begins",
+    liveUrl: "https://play.unity.com/en/games/cf737ef2-ad5d-42c0-bf45-ff624616acf0/simple-boss-fights",
     imageSrc: "/projects/funsies.svg",
     category: "funsies",
   },
