@@ -1,46 +1,97 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import type { ProjectCategory } from "@/data/projects";
 import { projectsInCategory } from "@/data/projects";
 import { ProjectCard } from "./ProjectCard";
+import { LiquidFill } from "./LiquidFill";
 
-const tabs: { key: ProjectCategory; label: string }[] = [
-  { key: "projects", label: "Projects" },
-  { key: "just-for-fun", label: "Just For Fun" },
-];
+const tabConfig: Record<
+  ProjectCategory,
+  { label: string; description: string; tint: string }
+> = {
+  projects: {
+    label: "Projects",
+    description:
+      "Apps, extensions, games, and experiments \u2014 take a look around.",
+    tint: "#f5ebe0",
+  },
+  "just-for-fun": {
+    label: "Just For Fun",
+    description:
+      "All my random shower thoughts and \"hey that\u2019d be cool\"s.",
+    tint: "#e8d5c4",
+  },
+};
+
+const tabKeys: ProjectCategory[] = ["projects", "just-for-fun"];
 
 export function ProjectFilter() {
   const [active, setActive] = useState<ProjectCategory>("projects");
+  const [pouring, setPouring] = useState<ProjectCategory | null>(null);
+
+  const cfg = tabConfig[active];
   const items = projectsInCategory(active);
+
+  function handleSwitch(key: ProjectCategory) {
+    if (key === active || pouring) return;
+    setPouring(key);
+  }
+
+  const onPourComplete = useCallback(() => {
+    if (!pouring) return;
+    document.body.style.backgroundColor = tabConfig[pouring].tint;
+    setActive(pouring);
+    setPouring(null);
+  }, [pouring]);
 
   return (
     <section className="space-y-8">
+      {pouring && (
+        <LiquidFill
+          color={tabConfig[pouring].tint}
+          onComplete={onPourComplete}
+        />
+      )}
+
+      <p
+        key={`desc-${active}`}
+        className="animate-fade-up max-w-xl text-base leading-relaxed text-boba-muted"
+      >
+        {cfg.description}
+      </p>
+
       <div
-        className="inline-flex rounded-full border border-boba-border bg-boba-cream/60 p-1"
+        className="inline-flex rounded-full border border-boba-border bg-boba-cream/60 p-1 shadow-boba-sm"
         role="tablist"
         aria-label="Project categories"
       >
-        {tabs.map((tab) => (
+        {tabKeys.map((key) => (
           <button
-            key={tab.key}
+            key={key}
             role="tab"
-            aria-selected={active === tab.key}
-            onClick={() => setActive(tab.key)}
-            className={`rounded-full px-5 py-2 text-sm font-semibold transition-all ${
-              active === tab.key
-                ? "bg-boba-accent text-boba-cream shadow-sm"
-                : "text-boba-muted hover:text-boba-espresso"
+            aria-selected={active === key}
+            onClick={() => handleSwitch(key)}
+            className={`animate-pop relative rounded-full px-5 py-2 text-sm font-semibold transition-all duration-300 ${
+              active === key
+                ? "bg-boba-accent text-boba-cream shadow-md scale-[1.03]"
+                : "text-boba-muted hover:text-boba-espresso hover:bg-boba-latte/40 hover:scale-[1.01]"
             }`}
           >
-            {tab.label}
+            {tabConfig[key].label}
           </button>
         ))}
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2">
-        {items.map((project) => (
-          <ProjectCard key={project.slug} project={project} />
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {items.map((project, i) => (
+          <div
+            key={`${active}-${project.slug}`}
+            className="animate-slide-in"
+            style={{ animationDelay: `${i * 0.07}s` }}
+          >
+            <ProjectCard project={project} />
+          </div>
         ))}
       </div>
     </section>

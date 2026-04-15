@@ -9,18 +9,6 @@
 body {
   @apply min-h-screen font-sans text-boba-espresso antialiased;
   background-color: #f5ebe0;
-  background-image:
-    radial-gradient(
-      ellipse 120% 80% at 50% -20%,
-      rgb(253 248 243 / 0.95),
-      transparent 55%
-    ),
-    radial-gradient(
-      circle at 100% 0%,
-      rgb(230 213 195 / 0.5),
-      transparent 45%
-    ),
-    radial-gradient(circle at 0% 100%, rgb(225 210 195 / 0.4), transparent 50%);
 }
 
 @layer base {
@@ -35,4 +23,89 @@ body {
   .focus-ring {
     @apply outline-none ring-2 ring-boba-accent ring-offset-2 ring-offset-boba-cream;
   }
+}
+
+/* --- liquid fill rise --- */
+@keyframes liquid-rise {
+  0%   { transform: translateY(100vh); }
+  100% { transform: translateY(-60px); }
+}
+
+/* --- general animations --- */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-4px); }
+  60% { transform: translateY(-2px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-1deg); }
+  75% { transform: rotate(1deg); }
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease both;
+}
+
+.animate-bob:hover {
+  animation: bob 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-wiggle:hover {
+  animation: wiggle 0.4s ease-in-out;
+}
+
+.animate-pop:active {
+  animation: pop 0.25s ease;
 }

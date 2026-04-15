@@ -34,7 +34,7 @@ export default function OpenGraphImage() {
           Portfolio
         </div>
         <div style={{ fontSize: 28, color: "#7a6455", maxWidth: 720 }}>
-          Projects, experiments & things I&apos;ve been brewing
+          Apps, extensions, games & experiments
         </div>
       </div>
     ),
