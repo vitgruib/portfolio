@@ -16,20 +16,10 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "portfolio",
-    title: "Portfolio",
-    description:
-      "This website — a boba-themed developer portfolio built with Next.js and Tailwind CSS, deployed on Vercel.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    githubUrl: "https://github.com/vitgruib/portfolio",
-    imageSrc: "/projects/dashboard.svg",
-    category: "projects",
-  },
-  {
     slug: "todo",
     title: "Todo AI Extension",
     description:
-      "A smart todo list extension for Chrome/Edge with drag-and-drop, sub-steps, deadlines, and a Gemma-backed AI chat companion.",
+      "A smart todo list extension for Chrome/Edge with drag-and-drop, deadlines, and a Gemma-backed AI chat companion.",
     stack: ["TypeScript", "React", "Vite", "Gemma AI", "Node.js"],
     status: "WIP",
     githubUrl: "https://github.com/vitgruib/todo",
@@ -51,7 +41,7 @@ export const projects: Project[] = [
     slug: "human-benchmark-3d",
     title: "Human Benchmark 3D",
     description:
-      "VR adaptation of classic Human Benchmark tests built in Unity with XR hand tracking—reaction time, memory, and more in immersive 3D.",
+      "VR adaptation of classic block tapping memory tests built in Unity with XR hand tracking in immersive 3D.",
     stack: ["Unity", "C#", "XR Hands", "Meta Quest"],
     githubUrl: "https://github.com/Ethanc143/Human-Benchmark-3D",
     liveUrl: "https://sidequestvr.com/app/45060/vr-memory-test",
@@ -62,7 +52,7 @@ export const projects: Project[] = [
     slug: "sat0ru",
     title: "SAT0RU",
     description:
-      "Fork of reinesana/SAT0RU — a real-time Jujutsu Kaisen cursed technique visualizer. Use hand gestures via MediaPipe to trigger Hollow Purple, Infinite Void, and more in 3D.",
+      "Fork of reinesana/SAT0RU — a real-time Jujutsu Kaisen cursed technique visualizer reading hand gestures via MediaPipe to trigger Hollow Purple, Infinite Void, and more in 3D. Added flick detection, background track, and hand-tracking debug UI.",
     stack: ["Three.js", "MediaPipe", "Gemini", "JavaScript"],
     status: "Fork",
     githubUrl: "https://github.com/vitgruib/SAT0RU",
@@ -70,10 +60,10 @@ export const projects: Project[] = [
     category: "just-for-fun",
   },
   {
-    slug: "the-hunt-begins",
-    title: "The Hunt Begins",
+    slug: "simple-boss-fights",
+    title: "Simple Boss Fights",
     description:
-      "Action boss-fight game built in Unity—dash, attack, and dodge through multi-phase encounters.",
+      "Action boss-fight game built in Unity—dash, attack, and dodge through exciting multi-phase encounters.",
     stack: ["Unity", "C#"],
     githubUrl: "https://github.com/vitgruib/The-Hunt-Begins",
     liveUrl: "https://play.unity.com/en/games/cf737ef2-ad5d-42c0-bf45-ff624616acf0/simple-boss-fights",
@@ -84,7 +74,7 @@ export const projects: Project[] = [
     slug: "party-box",
     title: "Charades & Imposter: Party Box",
     description:
-      "A free, no-ads, fully offline party game app on Google Play — charades, social deduction, and more on a single phone.",
+      "Most 'free' party games are ruined by forced ads and paywalled categories. Party Box is different: this app was built as a clean, high-performance alternative where everything—every category, every mode, and every feature—is unlocked from the moment you hit download.",
     stack: ["Android", "Kotlin"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.vitgrub.passandplaypartygames",
     imageSrc: "/projects/funsies.svg",

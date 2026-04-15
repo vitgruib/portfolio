@@ -62,7 +62,7 @@ export function ProjectFilter() {
       </p>
 
       <div
-        className="inline-flex rounded-full border border-boba-border bg-boba-cream/60 p-1 shadow-boba-sm"
+        className="inline-flex gap-1 rounded-full border border-boba-border bg-boba-cream/60 p-1 shadow-boba-sm"
         role="tablist"
         aria-label="Project categories"
       >

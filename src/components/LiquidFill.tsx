@@ -9,16 +9,14 @@ type Props = {
 };
 
 function LiquidFillInner({ color, onComplete }: Props) {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const el = containerRef.current;
+    const el = ref.current;
     if (!el) return;
 
     const onEnd = (e: AnimationEvent) => {
-      if (e.animationName === "liquid-rise") {
-        onComplete();
-      }
+      if (e.target === el) onComplete();
     };
 
     el.addEventListener("animationend", onEnd);
@@ -27,53 +25,86 @@ function LiquidFillInner({ color, onComplete }: Props) {
 
   return (
     <div
-      ref={containerRef}
+      ref={ref}
       style={{
         position: "fixed",
         left: 0,
         right: 0,
         bottom: 0,
-        height: "calc(100vh + 60px)",
+        height: 0,
         zIndex: 9999,
         pointerEvents: "none",
-        animation: "liquid-rise 0.85s cubic-bezier(0.4, 0, 0.2, 1) forwards",
+        animation: "liquid-fill 2s ease-in-out forwards",
       }}
     >
-      {/* Wavy surface at the top */}
-      <svg
-        style={{
-          display: "block",
-          width: "100%",
-          height: "60px",
-          flexShrink: 0,
-        }}
-        viewBox="0 0 1440 60"
-        preserveAspectRatio="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path fill={color}>
-          <animate
-            attributeName="d"
-            dur="0.45s"
-            repeatCount="indefinite"
-            values="
-              M0,30 C120,55 240,5 360,30 C480,55 600,5 720,30 C840,55 960,5 1080,30 C1200,55 1320,5 1440,30 L1440,60 L0,60 Z;
-              M0,30 C120,5 240,55 360,30 C480,5 600,55 720,30 C840,5 960,55 1080,30 C1200,5 1320,55 1440,30 L1440,60 L0,60 Z;
-              M0,30 C120,55 240,5 360,30 C480,55 600,5 720,30 C840,55 960,5 1080,30 C1200,55 1320,5 1440,30 L1440,60 L0,60 Z
-            "
-          />
-        </path>
-      </svg>
-
-      {/* Solid tea body below the wave */}
+      {/* Solid tea body — always fills from bottom */}
       <div
         style={{
-          flex: 1,
+          position: "absolute",
+          left: 0,
+          right: 0,
+          top: "50px",
+          bottom: 0,
           backgroundColor: color,
-          width: "100%",
-          height: "100vh",
         }}
       />
+
+      {/* Wave surface at the top edge */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "200%",
+          height: "60px",
+          animation: "wave-scroll 1.8s linear infinite",
+        }}
+      >
+        <svg
+          viewBox="0 0 2880 60"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ display: "block", width: "100%", height: "100%" }}
+        >
+          <path
+            d={
+              "M0,30 C180,55 360,5 540,30 C720,55 900,5 1080,30 " +
+              "C1260,55 1440,5 1620,30 C1800,55 1980,5 2160,30 " +
+              "C2340,55 2520,5 2700,30 C2880,55 2880,60 2880,60 L0,60 Z"
+            }
+            fill={color}
+          />
+        </svg>
+      </div>
+
+      {/* Second wave layer for depth */}
+      <div
+        style={{
+          position: "absolute",
+          top: "8px",
+          left: 0,
+          width: "200%",
+          height: "55px",
+          animation: "wave-scroll-reverse 2.2s linear infinite",
+          opacity: 0.6,
+        }}
+      >
+        <svg
+          viewBox="0 0 2880 55"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ display: "block", width: "100%", height: "100%" }}
+        >
+          <path
+            d={
+              "M0,28 C200,50 400,6 600,28 C800,50 1000,6 1200,28 " +
+              "C1400,50 1600,6 1800,28 C2000,50 2200,6 2400,28 " +
+              "C2600,50 2880,6 2880,28 L2880,55 L0,55 Z"
+            }
+            fill={color}
+          />
+        </svg>
+      </div>
     </div>
   );
 }
