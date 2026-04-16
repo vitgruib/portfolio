@@ -32,7 +32,7 @@ function LiquidFillInner({ color, onComplete }: Props) {
         right: 0,
         bottom: 0,
         height: 0,
-        zIndex: 9999,
+        zIndex: 5,
         pointerEvents: "none",
         animation: "liquid-fill 2s ease-in-out forwards",
       }}

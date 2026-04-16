@@ -57,12 +57,14 @@ export function ProjectFilter() {
       <p
         key={`desc-${active}`}
         className="animate-fade-up max-w-xl text-base leading-relaxed text-boba-muted"
+        style={{ animationDelay: "0.1s" }}
       >
         {cfg.description}
       </p>
 
       <div
-        className="inline-flex gap-1 rounded-full border border-boba-border bg-boba-cream/60 p-1 shadow-boba-sm"
+        className="animate-fade-up inline-flex gap-1 rounded-full border border-boba-border bg-boba-cream/60 p-1 shadow-boba-sm"
+        style={{ animationDelay: "0.15s" }}
         role="tablist"
         aria-label="Project categories"
       >
@@ -83,7 +85,7 @@ export function ProjectFilter() {
         ))}
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2">
         {items.map((project, i) => (
           <div
             key={`${active}-${project.slug}`}
