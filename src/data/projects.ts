@@ -62,7 +62,7 @@ export const projects: Project[] = [
     slug: "simple-boss-fights",
     title: "Simple Boss Fights",
     description:
-      "Difficult action boss-fight game built in Unity—dash, attack, and dodge through exciting multi-phase encounters.",
+      "Difficult action boss-fight game built in Unity. Good luck with these difficult, fast-paced encounters!",
     stack: ["Unity", "C#"],
     githubUrl: "https://github.com/vitgruib/The-Hunt-Begins",
     liveUrl: "https://play.unity.com/en/games/cf737ef2-ad5d-42c0-bf45-ff624616acf0/simple-boss-fights",
