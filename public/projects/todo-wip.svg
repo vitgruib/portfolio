@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xml="http://www.w3.org/XML/1998/namespace" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <pattern
+      id="hazard"
+      width="36"
+      height="36"
+      patternUnits="userSpaceOnUse"
+      patternTransform="rotate(42)"
+    >
+      <rect width="36" height="36" fill="#e8b200"/>
+      <line
+        x1="0"
+        y1="0"
+        x2="0"
+        y2="36"
+        stroke="#141414"
+        stroke-width="18"
+      />
+    </pattern>
+  </defs>
+  <g transform="translate(400 200) rotate(-12)">
+    <rect
+      x="-1500"
+      y="-140"
+      width="3000"
+      height="280"
+      fill="url(#hazard)"
+      stroke="#0d0d0d"
+      stroke-width="4"
+    />
+    <text
+      xml:space="preserve"
+      x="0"
+      y="28"
+      text-anchor="middle"
+      fill="#141414"
+      font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif"
+      font-size="72"
+      font-weight="900"
+      letter-spacing="0.5em"
+      stroke="#f5e6a5"
+      stroke-width="6"
+      paint-order="stroke fill"
+    > WIP    WIP    WIP </text>
+  </g>
+</svg>

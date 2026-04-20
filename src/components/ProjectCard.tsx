@@ -32,7 +32,7 @@ export function ProjectCard({ project }: Props) {
           alt={project.title}
           width={600}
           height={300}
-          className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.06]"
+          className="h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-[1.06]"
           unoptimized
         />
       </div>
@@ -42,13 +42,7 @@ export function ProjectCard({ project }: Props) {
             {project.title}
           </h2>
           {project.status && (
-            <span
-              className={`animate-wiggle rounded-full px-2 py-px font-mono text-[9px] font-semibold uppercase tracking-wide transition-transform duration-300 group-hover:scale-110 ${
-                project.status === "Fork"
-                  ? "bg-violet-100 text-violet-700"
-                  : "bg-amber-100 text-amber-700"
-              }`}
-            >
+            <span className="animate-wiggle rounded-full bg-violet-100 px-2 py-px font-mono text-[9px] font-semibold uppercase tracking-wide text-violet-700 transition-transform duration-300 group-hover:scale-110">
               {project.status}
             </span>
           )}

@@ -1,5 +1,5 @@
 export type ProjectCategory = "projects" | "just-for-fun";
-export type ProjectStatus = "WIP" | "Fork";
+export type ProjectStatus = "Fork";
 
 export type Project = {
   slug: string;
@@ -21,20 +21,19 @@ export const projects: Project[] = [
     description:
       "A smart todo list extension for Chrome/Edge with drag-and-drop, deadlines, and a Gemma-backed AI chat companion.",
     stack: ["TypeScript", "React", "Vite", "Gemma AI", "Node.js"],
-    status: "WIP",
     githubUrl: "https://github.com/vitgruib/todo",
-    imageSrc: "/projects/api.svg",
+    imageSrc: "/projects/todo-wip.svg",
     category: "projects",
   },
   {
     slug: "shambo",
     title: "Shambo",
     description:
-      "Chromium extension that blocks distracting sites, auto-closes tabs, and optionally shames you with TTS—productivity through peer pressure.",
+      "Chromium extension that blocks distracting sites, auto-closes tabs, and optionally shames you with TTS, pincering loafing with hard restrictions and psychological pressure.",
     stack: ["JavaScript", "Chrome MV3"],
-    status: "WIP",
-    githubUrl: "https://github.com/vitgruib/shambo",
-    imageSrc: "/projects/cli.svg",
+    liveUrl:
+      "https://chromewebstore.google.com/detail/shambo-%E2%80%94-website-blocker/nnjocfponpkmpkldmkfalljmacbbjkao",
+    imageSrc: "/projects/shambo.png",
     category: "projects",
   },
   {
@@ -45,29 +44,29 @@ export const projects: Project[] = [
     stack: ["Unity", "C#", "XR Hands", "Meta Quest"],
     githubUrl: "https://github.com/Ethanc143/Human-Benchmark-3D",
     liveUrl: "https://sidequestvr.com/app/45060/vr-memory-test",
-    imageSrc: "/projects/api.svg",
+    imageSrc: "/projects/human-benchmark-3d.png",
     category: "projects",
   },
   {
     slug: "sat0ru",
     title: "SAT0RU",
     description:
-      "Fork of reinesana/SAT0RU — a real-time Jujutsu Kaisen cursed technique visualizer reading hand gestures via MediaPipe to trigger Hollow Purple, Infinite Void, and more in 3D. Added flick detection, background track, and hand-tracking debug UI.",
-    stack: ["Three.js", "MediaPipe", "Gemini", "JavaScript"],
+      "Fork of reinesana/SAT0RU — a real-time Jujutsu Kaisen cursed technique visualizer reading hand gestures via MediaPipe. Added robust gesture smoothing, flick detection, and a thorough hand-tracking debug menu.",
+    stack: ["Three.js", "MediaPipe", "JavaScript"],
     status: "Fork",
     githubUrl: "https://github.com/vitgruib/SAT0RU",
-    imageSrc: "/projects/funsies.svg",
+    imageSrc: "/projects/sat0ru.png",
     category: "just-for-fun",
   },
   {
     slug: "simple-boss-fights",
     title: "Simple Boss Fights",
     description:
-      "Action boss-fight game built in Unity—dash, attack, and dodge through exciting multi-phase encounters.",
+      "Difficult action boss-fight game built in Unity—dash, attack, and dodge through exciting multi-phase encounters.",
     stack: ["Unity", "C#"],
     githubUrl: "https://github.com/vitgruib/The-Hunt-Begins",
     liveUrl: "https://play.unity.com/en/games/cf737ef2-ad5d-42c0-bf45-ff624616acf0/simple-boss-fights",
-    imageSrc: "/projects/funsies.svg",
+    imageSrc: "/projects/simple-boss-fights.png",
     category: "just-for-fun",
   },
   {
@@ -77,7 +76,7 @@ export const projects: Project[] = [
       "Most 'free' party games are ruined by forced ads and paywalled categories. Party Box is different: this app was built as a clean, high-performance alternative where everything—every category, every mode, and every feature—is unlocked from the moment you hit download.",
     stack: ["Android", "Kotlin"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.vitgrub.passandplaypartygames",
-    imageSrc: "/projects/funsies.svg",
+    imageSrc: "/projects/party-box.png",
     category: "just-for-fun",
   },
 ];
