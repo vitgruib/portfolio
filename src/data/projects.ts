@@ -59,14 +59,14 @@ export const projects: Project[] = [
     category: "just-for-fun",
   },
   {
-    slug: "simple-boss-fights",
-    title: "Simple Boss Fights",
+    slug: "spider-party",
+    title: "Spider-Party",
     description:
-      "Difficult action boss-fight game built in Unity. Good luck with these difficult, fast-paced encounters!",
-    stack: ["Unity", "C#"],
-    githubUrl: "https://github.com/vitgruib/The-Hunt-Begins",
-    liveUrl: "https://play.unity.com/en/games/cf737ef2-ad5d-42c0-bf45-ff624616acf0/simple-boss-fights",
-    imageSrc: "/projects/simple-boss-fights.png",
+      "The web alternative to Party Box: free party games—Charades, Imposter, Spin the Wheel, and Wavelength—that run in any browser on phones or laptops. No install, no signup, no ads, and no paywalled categories. Share a link and everyone's in.",
+    stack: ["JavaScript", "Web", "GitHub Pages"],
+    githubUrl: "https://github.com/vitgruib/spider-party",
+    liveUrl: "https://vitgruib.github.io/spider-party/",
+    imageSrc: "/projects/spider-party.png",
     category: "just-for-fun",
   },
   {
