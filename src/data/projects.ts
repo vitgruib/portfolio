@@ -70,6 +70,17 @@ export const projects: Project[] = [
     category: "just-for-fun",
   },
   {
+    slug: "dads",
+    title: "DADS: Distraction-Aware Driving Simulator",
+    description:
+      "Winning submission to Games for Change Game Jam under the category 'Own the Road.' Teaches about the dangers of distracted driving through a driving game that simulates driving distractions with control restrictions.",
+    stack: ["Unity", "C#", "HTML5"],
+    githubUrl: "https://github.com/Ethanc143/gamejam",
+    liveUrl: "https://kyozen1.itch.io/dads-distraction-aware-driving-simulator",
+    imageSrc: "/projects/dads.png",
+    category: "projects",
+  },
+  {
     slug: "party-box",
     title: "Charades & Imposter: Party Box",
     description:
