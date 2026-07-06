@@ -9,6 +9,7 @@ export type Project = {
   status?: ProjectStatus;
   githubUrl?: string;
   liveUrl?: string;
+  paperUrl?: string;
   /** Path under /public, e.g. /projects/foo.svg */
   imageSrc: string;
   category: ProjectCategory;
@@ -78,6 +79,18 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Ethanc143/gamejam",
     liveUrl: "https://kyozen1.itch.io/dads-distraction-aware-driving-simulator",
     imageSrc: "/projects/dads.png",
+    category: "projects",
+  },
+  {
+    slug: "metabolomics-pasc",
+    title: "Metabolomics-Based ML Diagnostics of PASC",
+    description:
+      "Machine learning pipeline for diagnosing Post-Acute Sequelae of SARS-CoV-2 Infection (Long COVID) from metabolomics data, published in Metabolites (MDPI).",
+    stack: ["Python", "Machine Learning", "Metabolomics"],
+    githubUrl:
+      "https://github.com/Ethanc143/Metabolomics-Based-Machine-Learning-Diagnostics-of-Post-Acute-Sequelae-of-SARS-CoV-2-Infection",
+    paperUrl: "https://www.mdpi.com/2218-1989/15/12/801",
+    imageSrc: "/projects/metabolomics-pasc.svg",
     category: "projects",
   },
   {

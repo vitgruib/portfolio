@@ -95,6 +95,16 @@ export function ProjectCard({ project }: Props) {
               Live demo
             </a>
           ) : null}
+          {project.paperUrl ? (
+            <a
+              href={project.paperUrl}
+              className="animate-bob animate-pop text-xs font-semibold text-boba-mocha transition-colors duration-200 hover:text-boba-espresso focus-visible:focus-ring rounded-sm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Paper
+            </a>
+          ) : null}
         </div>
       </div>
     </article>
