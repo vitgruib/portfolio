@@ -25,7 +25,7 @@ export const projects: Project[] = [
     githubUrl:
       "https://github.com/Ethanc143/Metabolomics-Based-Machine-Learning-Diagnostics-of-Post-Acute-Sequelae-of-SARS-CoV-2-Infection",
     paperUrl: "https://www.mdpi.com/2218-1989/15/12/801",
-    imageSrc: "/projects/metabolomics-pasc.svg",
+    imageSrc: "/projects/metabolomics-pasc.png",
     category: "projects",
   },
   {
