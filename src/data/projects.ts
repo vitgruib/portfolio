@@ -29,6 +29,16 @@ export const projects: Project[] = [
     category: "projects",
   },
   {
+    slug: "attrpred",
+    title: "AttrPred: Do Face Embeddings Predict Attractiveness?",
+    description:
+      "Benchmarked 11 face-embedding families (deep identity CNNs, classical methods, CLIP, DINOv2) against 3 human attractiveness-rating datasets using frozen embeddings + ridge regression probes. Found identity-trained embeddings consistently underperform non-identity ones at predicting attractiveness, revealing a pose-invariance/appearance-information tradeoff.",
+    stack: ["Python", "PyTorch", "scikit-learn", "Machine Learning", "Computer Vision"],
+    githubUrl: "https://github.com/vitgruib/AttrPred",
+    imageSrc: "/projects/attrpred.png",
+    category: "projects",
+  },
+  {
     slug: "todo",
     title: "Todo AI Extension",
     description:
