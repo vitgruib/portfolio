@@ -54,6 +54,7 @@ export const projects: Project[] = [
     description:
       "Chromium extension that blocks distracting sites, auto-closes tabs, and optionally shames you with TTS, pincering loafing with hard restrictions and psychological pressure.",
     stack: ["JavaScript", "Chrome MV3"],
+    githubUrl: "https://github.com/vitgruib/shambo",
     liveUrl:
       "https://chromewebstore.google.com/detail/shambo-%E2%80%94-website-blocker/nnjocfponpkmpkldmkfalljmacbbjkao",
     imageSrc: "/projects/shambo.png",
