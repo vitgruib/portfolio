@@ -65,7 +65,7 @@ export const projects: Project[] = [
     title: "Human Benchmark 3D",
     description:
       "VR adaptation of classic block tapping memory tests built in Unity with XR hand tracking in immersive 3D.",
-    stack: ["Unity", "C#", "XR Hands", "Meta Quest"],
+    stack: ["Unity", "C#", "VR", "Meta Quest"],
     githubUrl: "https://github.com/Ethanc143/Human-Benchmark-3D",
     liveUrl: "https://sidequestvr.com/app/45060/vr-memory-test",
     imageSrc: "/projects/human-benchmark-3d.png",
