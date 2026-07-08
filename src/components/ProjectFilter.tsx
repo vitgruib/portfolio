@@ -13,19 +13,19 @@ const tabConfig: Record<
   research: {
     label: "Research",
     description:
-      "Papers, experiments, and benchmarks \u2014 where I dig into the data.",
+      "Papers, experiments, and benchmarks I've spent real time on.",
     tint: "#f5ebe0",
   },
   tools: {
     label: "Tools",
     description:
-      "Apps and extensions built to actually get used \u2014 no fluff.",
+      "Apps and extensions I built to actually use.",
     tint: "#e8d5c4",
   },
   funsies: {
     label: "Funsies",
     description:
-      "All my random shower thoughts and \"hey that\u2019d be cool\"s.",
+      "Random shower thoughts and \"hey, that'd be cool\" ideas.",
     tint: "#e6d9f2",
   },
 };
