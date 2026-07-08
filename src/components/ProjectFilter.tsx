@@ -91,7 +91,7 @@ export function ProjectFilter() {
         ))}
       </div>
 
-      <div className="grid gap-6">
+      <div className="grid gap-6 sm:grid-cols-2">
         {items.map((project, i) => (
           <div
             key={`${active}-${project.slug}`}

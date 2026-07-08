@@ -6,7 +6,7 @@ type Props = { project: Project };
 export function ProjectCard({ project }: Props) {
   return (
     <article className="group flex overflow-hidden rounded-xl border border-boba-border/90 bg-boba-cream shadow-boba-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-boba-wood/50 hover:shadow-boba">
-      <div className="relative w-40 shrink-0 self-stretch overflow-hidden bg-boba-latte sm:w-52">
+      <div className="relative w-32 shrink-0 self-stretch overflow-hidden bg-boba-latte sm:w-40">
         <Image
           src={project.imageSrc}
           alt={project.title}
