@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { Project } from "@/data/projects";
+import { ZoomableImage } from "./ZoomableImage";
 
 type Props = { project: Project };
 
@@ -7,13 +7,10 @@ export function ProjectCard({ project }: Props) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-boba-border/90 bg-boba-cream shadow-boba-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-boba-wood/50 hover:shadow-boba hover:rotate-[0.3deg]">
       <div className="relative aspect-[2/1] w-full overflow-hidden bg-boba-latte">
-        <Image
+        <ZoomableImage
           src={project.imageSrc}
           alt={project.title}
-          width={600}
-          height={300}
           className="h-full w-full object-contain object-center transition-transform duration-500 ease-out group-hover:scale-[1.06]"
-          unoptimized
         />
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5">
