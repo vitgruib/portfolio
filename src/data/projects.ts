@@ -1,5 +1,5 @@
 export type ProjectCategory = "research" | "tools" | "funsies";
-export type ProjectStatus = "Fork" | "Ongoing";
+export type ProjectStatus = "Fork" | "Handed off";
 
 export type Project = {
   slug: string;
@@ -20,9 +20,9 @@ export const projects: Project[] = [
     slug: "sipacl",
     title: "SIPACL: Prioritized Level Replay for RL Driving Agents",
     description:
-      "Reinforcement-learning research on autonomous driving agents. Key result: paired by seed, driving policies trained with Prioritized Level Replay (PLR) significantly outperform those trained without it (p < 0.05; paired-t p = 0.033, Wilcoxon p = 0.036, PLR wins 21/30 seeds). Not open source — the research was handed off and is ongoing.",
+      "Reinforcement-learning research on autonomous driving agents. Key result: paired by seed, driving policies trained with Prioritized Level Replay (PLR) significantly outperform those trained without it (p < 0.05; paired-t p = 0.033, Wilcoxon p = 0.036, PLR wins 21/30 seeds). Not open source — I handed the research off.",
     stack: ["Python", "Reinforcement Learning", "Autonomous Driving"],
-    status: "Ongoing",
+    status: "Handed off",
     imageSrc: "/projects/sipacl.png",
     category: "research",
   },
