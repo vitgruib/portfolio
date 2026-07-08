@@ -5,14 +5,14 @@ type Props = { project: Project };
 
 export function ProjectCard({ project }: Props) {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-xl border border-boba-border/90 bg-boba-cream shadow-boba-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-boba-wood/50 hover:shadow-boba hover:rotate-[0.3deg]">
-      <div className="relative aspect-[2/1] w-full overflow-hidden bg-boba-latte">
+    <article className="group flex overflow-hidden rounded-xl border border-boba-border/90 bg-boba-cream shadow-boba-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-boba-wood/50 hover:shadow-boba">
+      <div className="relative w-40 shrink-0 self-stretch overflow-hidden bg-boba-latte sm:w-52">
         <Image
           src={project.imageSrc}
           alt={project.title}
           width={600}
           height={300}
-          className="h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-[1.06]"
+          className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-[1.06]"
           unoptimized
         />
       </div>
