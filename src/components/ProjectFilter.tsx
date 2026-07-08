@@ -6,28 +6,10 @@ import { projectsInCategory } from "@/data/projects";
 import { ProjectCard } from "./ProjectCard";
 import { LiquidFill } from "./LiquidFill";
 
-const tabConfig: Record<
-  ProjectCategory,
-  { label: string; description: string; tint: string }
-> = {
-  research: {
-    label: "Research",
-    description:
-      "Papers, experiments, and benchmarks I've spent real time on.",
-    tint: "#f5ebe0",
-  },
-  tools: {
-    label: "Tools",
-    description:
-      "Apps and extensions I built to actually use.",
-    tint: "#e8d5c4",
-  },
-  funsies: {
-    label: "Funsies",
-    description:
-      "Random shower thoughts and \"hey, that'd be cool\" ideas.",
-    tint: "#e6d9f2",
-  },
+const tabConfig: Record<ProjectCategory, { label: string; tint: string }> = {
+  research: { label: "Research", tint: "#f5ebe0" },
+  tools: { label: "Tools", tint: "#e8d5c4" },
+  funsies: { label: "Funsies", tint: "#e6d9f2" },
 };
 
 const tabKeys: ProjectCategory[] = ["research", "tools", "funsies"];
@@ -36,7 +18,6 @@ export function ProjectFilter() {
   const [active, setActive] = useState<ProjectCategory>("research");
   const [pouring, setPouring] = useState<ProjectCategory | null>(null);
 
-  const cfg = tabConfig[active];
   const items = projectsInCategory(active);
 
   function handleSwitch(key: ProjectCategory) {
@@ -61,11 +42,13 @@ export function ProjectFilter() {
       )}
 
       <p
-        key={`desc-${active}`}
-        className="animate-fade-up max-w-xl text-base leading-relaxed text-boba-muted"
+        className="animate-fade-up max-w-2xl text-base leading-relaxed text-boba-muted"
         style={{ animationDelay: "0.1s" }}
       >
-        {cfg.description}
+        Hey! I&apos;m Ethan, an incoming freshman at Berkeley studying EECS.
+        Here&apos;s some of the different projects I worked on: formal research
+        projects, useful tools I made based on needs I felt or saw, and a bunch
+        of fun gimmicky games I made. Explore at your own leisure :)
       </p>
 
       <div
