@@ -31,7 +31,7 @@ export const projects: Project[] = [
   },
   {
     slug: "sipacl",
-    title: "SIPACL: Prioritized Level Replay for RL Driving Agents",
+    title: "Prioritized Level Replay in RL Driving Environments",
     description:
       "Reinforcement learning research on autonomous driving agents. The key result: paired by seed, driving policies trained with Prioritized Level Replay (PLR) beat those trained without it at p < 0.05 (paired-t p = 0.033, Wilcoxon p = 0.036, PLR wins 21 of 30 seeds). The code isn't open source.",
     stack: ["Python", "Reinforcement Learning", "Autonomous Driving"],
