@@ -1,4 +1,4 @@
-export type ProjectCategory = "projects" | "just-for-fun";
+export type ProjectCategory = "research" | "tools" | "funsies";
 export type ProjectStatus = "Fork";
 
 export type Project = {
@@ -26,7 +26,7 @@ export const projects: Project[] = [
       "https://github.com/Ethanc143/Metabolomics-Based-Machine-Learning-Diagnostics-of-Post-Acute-Sequelae-of-SARS-CoV-2-Infection",
     paperUrl: "https://www.mdpi.com/2218-1989/15/12/801",
     imageSrc: "/projects/metabolomics-pasc.png",
-    category: "projects",
+    category: "research",
   },
   {
     slug: "attrpred",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     stack: ["Python", "PyTorch", "scikit-learn", "Machine Learning", "Computer Vision"],
     githubUrl: "https://github.com/vitgruib/AttrPred",
     imageSrc: "/projects/attrpred.png",
-    category: "projects",
+    category: "research",
   },
   {
     slug: "todo",
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     stack: ["TypeScript", "React", "Vite", "Gemma AI", "Node.js"],
     githubUrl: "https://github.com/vitgruib/todo",
     imageSrc: "/projects/todo-wip.svg",
-    category: "projects",
+    category: "tools",
   },
   {
     slug: "shambo",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     liveUrl:
       "https://chromewebstore.google.com/detail/shambo-%E2%80%94-website-blocker/nnjocfponpkmpkldmkfalljmacbbjkao",
     imageSrc: "/projects/shambo.png",
-    category: "projects",
+    category: "tools",
   },
   {
     slug: "human-benchmark-3d",
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Ethanc143/Human-Benchmark-3D",
     liveUrl: "https://sidequestvr.com/app/45060/vr-memory-test",
     imageSrc: "/projects/human-benchmark-3d.png",
-    category: "projects",
+    category: "tools",
   },
   {
     slug: "sat0ru",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     status: "Fork",
     githubUrl: "https://github.com/vitgruib/SAT0RU",
     imageSrc: "/projects/sat0ru.png",
-    category: "just-for-fun",
+    category: "funsies",
   },
   {
     slug: "spider-party",
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/vitgruib/spider-party",
     liveUrl: "https://vitgruib.github.io/spider-party/",
     imageSrc: "/projects/spider-party.png",
-    category: "just-for-fun",
+    category: "funsies",
   },
   {
     slug: "dads",
@@ -102,7 +102,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Ethanc143/gamejam",
     liveUrl: "https://kyozen1.itch.io/dads-distraction-aware-driving-simulator",
     imageSrc: "/projects/dads.png",
-    category: "projects",
+    category: "funsies",
   },
   {
     slug: "party-box",
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     stack: ["Android", "Kotlin"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.vitgrub.passandplaypartygames",
     imageSrc: "/projects/party-box.png",
-    category: "just-for-fun",
+    category: "funsies",
   },
 ];
 

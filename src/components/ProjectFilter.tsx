@@ -10,24 +10,30 @@ const tabConfig: Record<
   ProjectCategory,
   { label: string; description: string; tint: string }
 > = {
-  projects: {
-    label: "Projects",
+  research: {
+    label: "Research",
     description:
-      "Apps, extensions, games, and experiments \u2014 take a look around.",
+      "Papers, experiments, and benchmarks \u2014 where I dig into the data.",
     tint: "#f5ebe0",
   },
-  "just-for-fun": {
-    label: "Just For Fun",
+  tools: {
+    label: "Tools",
+    description:
+      "Apps and extensions built to actually get used \u2014 no fluff.",
+    tint: "#e8d5c4",
+  },
+  funsies: {
+    label: "Funsies",
     description:
       "All my random shower thoughts and \"hey that\u2019d be cool\"s.",
-    tint: "#e8d5c4",
+    tint: "#e6d9f2",
   },
 };
 
-const tabKeys: ProjectCategory[] = ["projects", "just-for-fun"];
+const tabKeys: ProjectCategory[] = ["research", "tools", "funsies"];
 
 export function ProjectFilter() {
-  const [active, setActive] = useState<ProjectCategory>("projects");
+  const [active, setActive] = useState<ProjectCategory>("research");
   const [pouring, setPouring] = useState<ProjectCategory | null>(null);
 
   const cfg = tabConfig[active];
