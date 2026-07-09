@@ -1,11 +1,21 @@
-import type { Project } from "@/data/projects";
+import type { Project, ProjectCategory } from "@/data/projects";
 import { ZoomableImage } from "./ZoomableImage";
 
 type Props = { project: Project };
 
+// A light tint of each tab's page background so cards read as part of their page.
+const cardTint: Record<ProjectCategory, string> = {
+  research: "#fdf9f4",
+  tools: "#f8efe6",
+  funsies: "#f5eefb",
+};
+
 export function ProjectCard({ project }: Props) {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-xl border border-boba-border/90 bg-boba-cream shadow-boba-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-boba-wood/50 hover:shadow-boba hover:rotate-[0.3deg]">
+    <article
+      style={{ backgroundColor: cardTint[project.category] }}
+      className="group flex flex-col overflow-hidden rounded-xl border border-boba-border/90 shadow-boba-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-boba-wood/50 hover:shadow-boba hover:rotate-[0.3deg]"
+    >
       <div className="relative aspect-[2/1] w-full overflow-hidden bg-boba-latte">
         <ZoomableImage
           src={project.imageSrc}

@@ -48,7 +48,7 @@ export function ProjectFilter() {
         Hey! I&apos;m Ethan, an incoming freshman at Berkeley studying EECS.
         Here&apos;s some of the different projects I worked on: formal research
         projects, useful tools I made based on needs I felt or saw, and a bunch
-        of fun gimmicky games I made. Explore at your own leisure :)
+        of fun gimmicky games I made. Explore at your leisure :)
       </p>
 
       <div

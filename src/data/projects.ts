@@ -21,7 +21,7 @@ export const projects: Project[] = [
     slug: "metabolomics-pasc",
     title: "Metabolomics-Based ML Diagnostics of PASC",
     description:
-      "Machine learning pipeline for diagnosing Post-Acute Sequelae of SARS-CoV-2 Infection (Long COVID) from metabolomics data. First-author paper published in Metabolites (MDPI).",
+      "Machine learning pipeline for diagnosing Post-Acute Sequelae of SARS-CoV-2 Infection (Long COVID) using metabolomic data. Proposes a novel method for exclusionary diagnosis utilizing molecular descriptors calculated with E-Dragon. First-author paper published in Metabolites.",
     stack: ["Python", "Machine Learning", "Bioinformatics"],
     githubUrl:
       "https://github.com/Ethanc143/Metabolomics-Based-Machine-Learning-Diagnostics-of-Post-Acute-Sequelae-of-SARS-CoV-2-Infection",
@@ -33,16 +33,16 @@ export const projects: Project[] = [
     slug: "sipacl",
     title: "Prioritized Level Replay in RL Driving Environments",
     description:
-      "Reinforcement learning research on autonomous driving agents. The key result: paired by seed, driving policies trained with Prioritized Level Replay (PLR) beat those trained without it at p < 0.05 (paired-t p = 0.033, Wilcoxon p = 0.036, PLR wins 21 of 30 seeds). The code isn't open source.",
+      "Prioritized level replay modifications to standard PPO reinforcement learning algorithms using autonomous driving agents. Prioritized level replay trained RL agents beat those trained without it with p < 0.05 and win in 21 of 30 tested training seeds. Code for in-progress research is not open source.",
     stack: ["Python", "Reinforcement Learning", "Autonomous Driving"],
     imageSrc: "/projects/sipacl.png",
     category: "research",
   },
   {
     slug: "attrpred",
-    title: "AttrPred: Do Face Embeddings Predict Attractiveness?",
+    title: "Do Face Embeddings Predict Attractiveness?",
     description:
-      "Benchmarked 11 face-embedding families (deep identity CNNs, classical methods, CLIP, DINOv2) against 3 human attractiveness-rating datasets using frozen embeddings and ridge regression probes. Identity-trained embeddings did consistently worse at predicting attractiveness than non-identity ones, which points to a tradeoff between pose invariance and appearance information.",
+      "Benchmarked 11 face-embedding families (deep identity CNNs, classical methods, CLIP, DINOv2) against 3 human attractiveness-rating datasets using frozen embeddings and ridge regression. Found that embeddings trained to capture identity did consistently worse at predicting attractiveness than those that were not, pointing to a tradeoff between pose invariance and attractiveness predictivity.",
     stack: ["Python", "PyTorch", "scikit-learn", "Machine Learning", "Computer Vision"],
     githubUrl: "https://github.com/vitgruib/AttrPred",
     imageSrc: "/projects/attrpred.png",
@@ -54,8 +54,8 @@ export const projects: Project[] = [
     slug: "human-benchmark-3d",
     title: "Human Benchmark 3D",
     description:
-      "VR take on the classic block-tapping memory tests, built in Unity with hand tracking for Meta Quest. Published on SideQuest.",
-    stack: ["Unity", "C#", "VR", "Meta Quest"],
+      "Virtual reality edition of classic block-tapping memory tests utilizing blocks of various heights. Uses Firebase to record user performance and provide comparative feedback to other users of the same age bracket.",
+    stack: ["Unity", "C#", "VR", "Meta Quest", "Firebase"],
     githubUrl: "https://github.com/Ethanc143/Human-Benchmark-3D",
     liveUrl: "https://sidequestvr.com/app/45060/vr-memory-test",
     imageSrc: "/projects/human-benchmark-3d.png",
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     slug: "shambo",
     title: "Shambo",
     description:
-      "Chromium extension that blocks distracting sites and auto-closes tabs. If you slip up, it can call you out loud with text-to-speech. The idea is to fight procrastination with both hard blocks and a little psychological pressure.",
+      "Chromium extension that blocks distracting sites and auto-closes tabs, with support for custom subpaths. Utilizes psychology (optionally) to fight procrastination by leaving snarky comments each time users try to open unproductive sites on their custom blocklist.",
     stack: ["JavaScript", "Chrome MV3"],
     githubUrl: "https://github.com/vitgruib/shambo",
     liveUrl:
@@ -75,10 +75,10 @@ export const projects: Project[] = [
   },
   {
     slug: "todo",
-    title: "Todo AI Extension",
+    title: "Todo Extension",
     description:
-      "A todo list extension for Chrome and Edge with drag-and-drop, deadlines, and a Gemma-backed AI chat companion.",
-    stack: ["TypeScript", "React", "Vite", "Gemma AI", "Node.js"],
+      "Chromium to-do list extension featuring a simplistic design with reminders and an intuitive short/long-term task organization scheme. Undergoing testing before publication.",
+    stack: ["TypeScript", "React", "Vite", "Chrome MV3"],
     githubUrl: "https://github.com/vitgruib/todo",
     imageSrc: "/projects/todo-wip.svg",
     category: "tools",
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     slug: "dads",
     title: "DADS: Distraction-Aware Driving Simulator",
     description:
-      "Winning submission to the Games for Change Game Jam in the 'Own the Road' category. A driving game about the dangers of distracted driving, where distractions take over your controls while you try to stay on the road.",
+      "Winning submission to the Games for Change Game Jam in the 'Own the Road' category. A driving game that warns about the dangers of distracted driving by making users contend with simulated distractions while they try to drive safely on the road. Features summaries of risky driving caused by distracted driving.",
     stack: ["Unity", "C#"],
     githubUrl: "https://github.com/Ethanc143/gamejam",
     liveUrl: "https://kyozen1.itch.io/dads-distraction-aware-driving-simulator",
@@ -98,9 +98,9 @@ export const projects: Project[] = [
   },
   {
     slug: "party-box",
-    title: "Charades & Imposter: Party Box",
+    title: "Party Box",
     description:
-      "Most 'free' party games get ruined by forced ads and paywalled categories. Party Box is different. Every category, mode, and feature is unlocked from the moment you download it.",
+      "Most party game apps are ruined by forced ads and paywalled categories. Party Box provides multiple party games such as charades and imposter bundled into one offline app without any content restrictions.",
     stack: ["Android", "Kotlin"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.vitgrub.passandplaypartygames",
     imageSrc: "/projects/party-box.png",
@@ -108,10 +108,10 @@ export const projects: Project[] = [
   },
   {
     slug: "spider-party",
-    title: "Spider-Party",
+    title: "Spider Party",
     description:
-      "The web version of Party Box. Free party games (Charades, Imposter, Spin the Wheel, and Wavelength) that run in any browser on a phone or laptop. No install, no signup, no ads, no paywalled categories. Share a link and everyone's in.",
-    stack: ["JavaScript", "Web", "GitHub Pages"],
+      "Web version of Party Box (see what I did there). Free party games that run on any browser on mobile or laptop. Minimizing barriers further: no signup, no paywalls, no ads, no install—just a link.",
+    stack: ["JavaScript", "HTML", "CSS"],
     githubUrl: "https://github.com/vitgruib/spider-party",
     liveUrl: "https://vitgruib.github.io/spider-party/",
     imageSrc: "/projects/spider-party.png",
@@ -121,7 +121,7 @@ export const projects: Project[] = [
     slug: "sat0ru",
     title: "SAT0RU",
     description:
-      "Fork of reinesana/SAT0RU, a real-time Jujutsu Kaisen cursed technique visualizer that reads hand gestures with MediaPipe. I added gesture smoothing, flick detection, and a detailed hand-tracking debug menu.",
+      "Fork of reinesana/SAT0RU, a real-time Jujutsu Kaisen cursed technique visualizer that reads hand gestures with MediaPipe. Added gesture smoothing for stability, flick detection to detect dynamic hand gestures, and a detailed debug menu.",
     stack: ["Three.js", "MediaPipe", "JavaScript"],
     status: "Fork",
     githubUrl: "https://github.com/vitgruib/SAT0RU",
