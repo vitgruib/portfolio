@@ -34,7 +34,7 @@ export const projects: Project[] = [
     title: "Prioritized Level Replay in RL Driving Environments",
     description:
       "Prioritized level replay modifications to standard PPO reinforcement learning algorithms using autonomous driving agents. Prioritized level replay trained RL agents beat those trained without it with p < 0.05 and win in 21 of 30 tested training seeds. Code for in-progress research is not open source.",
-    stack: ["Python", "Reinforcement Learning", "Autonomous Driving"],
+    stack: ["Python", "Reinforcement Learning", "PPO", "Autonomous Driving"],
     imageSrc: "/projects/sipacl.png",
     category: "research",
   },
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     title: "Do Face Embeddings Predict Attractiveness?",
     description:
       "Benchmarked 11 face-embedding families (deep identity CNNs, classical methods, CLIP, DINOv2) against 3 human attractiveness-rating datasets using frozen embeddings and ridge regression. Found that embeddings trained to capture identity did consistently worse at predicting attractiveness than those that were not, pointing to a tradeoff between pose invariance and attractiveness predictivity.",
-    stack: ["Python", "PyTorch", "scikit-learn", "Machine Learning", "Computer Vision"],
+    stack: ["Python", "PyTorch", "scikit-learn", "Computer Vision"],
     githubUrl: "https://github.com/vitgruib/AttrPred",
     imageSrc: "/projects/attrpred.png",
     category: "research",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     title: "Human Benchmark 3D",
     description:
       "Virtual reality edition of classic block-tapping memory tests utilizing blocks of various heights. Uses Firebase to record user performance and provide comparative feedback to other users of the same age bracket.",
-    stack: ["Unity", "C#", "VR", "Meta Quest", "Firebase"],
+    stack: ["C#", "Unity", "VR", "Firebase"],
     githubUrl: "https://github.com/Ethanc143/Human-Benchmark-3D",
     liveUrl: "https://sidequestvr.com/app/45060/vr-memory-test",
     imageSrc: "/projects/human-benchmark-3d.png",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     title: "DADS: Distraction-Aware Driving Simulator",
     description:
       "Winning submission to the Games for Change Game Jam in the 'Own the Road' category. A driving game that warns about the dangers of distracted driving by making users contend with simulated distractions while they try to drive safely on the road. Features summaries of risky driving caused by distracted driving.",
-    stack: ["Unity", "C#"],
+    stack: ["C#", "Unity"],
     githubUrl: "https://github.com/Ethanc143/gamejam",
     liveUrl: "https://kyozen1.itch.io/dads-distraction-aware-driving-simulator",
     imageSrc: "/projects/dads.png",
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     title: "Party Box",
     description:
       "Most party game apps are ruined by forced ads and paywalled categories. Party Box provides multiple party games such as charades and imposter bundled into one offline app without any content restrictions.",
-    stack: ["Android", "Kotlin"],
+    stack: ["Kotlin", "Android"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.vitgrub.passandplaypartygames",
     imageSrc: "/projects/party-box.png",
     category: "funsies",
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     title: "SAT0RU",
     description:
       "Fork of reinesana/SAT0RU, a real-time Jujutsu Kaisen cursed technique visualizer that reads hand gestures with MediaPipe. Added gesture smoothing for stability, flick detection to detect dynamic hand gestures, and a detailed debug menu.",
-    stack: ["Three.js", "MediaPipe", "JavaScript"],
+    stack: ["JavaScript", "Three.js", "MediaPipe"],
     status: "Fork",
     githubUrl: "https://github.com/vitgruib/SAT0RU",
     imageSrc: "/projects/sat0ru.png",
