@@ -75,10 +75,10 @@ export const projects: Project[] = [
   },
   {
     slug: "todo",
-    title: "Todo Extension",
+    title: "Todo",
     description:
       "Chromium to-do list extension featuring a simplistic design with reminders and an intuitive short/long-term task organization scheme. Undergoing testing before publication.",
-    stack: ["TypeScript", "React", "Vite", "Chrome MV3"],
+    stack: ["TypeScript", "React", "Chrome MV3"],
     githubUrl: "https://github.com/vitgruib/todo",
     imageSrc: "/projects/todo-wip.svg",
     category: "tools",
