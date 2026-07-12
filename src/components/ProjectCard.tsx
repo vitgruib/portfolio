@@ -10,13 +10,24 @@ const cardTint: Record<ProjectCategory, string> = {
   funsies: "#f5eefb",
 };
 
+// The image backdrop matches each tab's page background color so images sit
+// on the same color the page pours into (e.g. funsies = light purple).
+const imageTint: Record<ProjectCategory, string> = {
+  research: "#f5ebe0",
+  tools: "#e8d5c4",
+  funsies: "#e6d9f2",
+};
+
 export function ProjectCard({ project }: Props) {
   return (
     <article
       style={{ backgroundColor: cardTint[project.category] }}
       className="group flex flex-col overflow-hidden rounded-xl border border-boba-border/90 shadow-boba-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-boba-wood/50 hover:shadow-boba hover:rotate-[0.3deg]"
     >
-      <div className="relative aspect-[2/1] w-full overflow-hidden bg-boba-latte">
+      <div
+        style={{ backgroundColor: imageTint[project.category] }}
+        className="relative aspect-[2/1] w-full overflow-hidden"
+      >
         <ZoomableImage
           src={project.imageSrc}
           alt={project.title}
