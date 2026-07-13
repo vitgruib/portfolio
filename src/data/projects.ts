@@ -77,7 +77,7 @@ export const projects: Project[] = [
     slug: "todo",
     title: "Todo",
     description:
-      "Chromium to-do list extension featuring a simplistic design with reminders and an intuitive short/long-term task organization scheme. Undergoing testing before publication.",
+      "Chromium to-do list extension with a simple design, reminders, and an intuitive short/long-term task organization scheme. Originally built around an AI assistant that nagged you to finish tasks—but that made it cluttered and harder to use. Cutting the AI entirely was the lesson: it doesn't belong in everything, and stripping it out left a cleaner, more usable tool. Undergoing testing before publication.",
     stack: ["TypeScript", "React", "Chrome MV3"],
     githubUrl: "https://github.com/vitgruib/todo",
     imageSrc: "/projects/todo-wip.svg",
