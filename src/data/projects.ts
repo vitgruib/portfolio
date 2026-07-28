@@ -65,7 +65,7 @@ export const projects: Project[] = [
     slug: "shambo",
     title: "Shambo",
     description:
-      "Chromium extension that blocks distracting sites and auto-closes tabs, with support for custom subpaths. Utilizes psychology (optionally) to fight procrastination by leaving snarky comments each time users try to open unproductive sites on their custom blocklist.",
+      "Featured five-star extension on the Chrome Web Store. Blocks distracting sites and auto-closes tabs, with support for custom subpaths. Utilizes psychology (optionally) to fight procrastination by leaving snarky comments each time users try to open unproductive sites on their custom blocklist.",
     stack: ["JavaScript", "Chrome MV3"],
     githubUrl: "https://github.com/vitgruib/shambo",
     liveUrl:
