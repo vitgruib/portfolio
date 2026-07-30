@@ -77,12 +77,12 @@ export const projects: Project[] = [
     slug: "todo",
     title: "Toto Simple",
     description:
-      "Five-star Chrome Web Store extension for managing short-term tasks and long-term goals with minimal friction. Includes due-date reminders, one-click snoozing, urgent-task flags, cloud sync, and JSON import/export.",
+      "Five-star Chrome Web Store extension designed around minimizing friction: due-date reminders, one-click snoozing, urgent-task flags, cloud sync, and JSON import/export. Originally built around AI task organization, but it made everything cluttered—a quick lesson that AI doesn't belong in everything.",
     stack: ["TypeScript", "React", "Chrome MV3"],
     githubUrl: "https://github.com/vitgruib/todo",
     liveUrl:
       "https://chromewebstore.google.com/detail/toto-simple-todo-due-remi/glnmgmemmaedcgmnbbipllpfikpnmbjl",
-    imageSrc: "/projects/toto-simple.svg",
+    imageSrc: "/projects/toto-simple.png",
     category: "tools",
   },
 
