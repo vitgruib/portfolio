@@ -33,7 +33,7 @@ export const projects: Project[] = [
     slug: "sipacl",
     title: "Prioritized Level Replay in RL Driving Environments",
     description:
-      "Prioritized level replay modifications to standard PPO reinforcement learning algorithms using autonomous driving agents. Prioritized level replay trained RL agents beat those trained without it with p < 0.05 and win in 21 of 30 tested training seeds.",
+      "Prioritized level replay (PLR) modifications to standard PPO using autonomous driving agents. Each replayed level is a Scenic scenario program sampled into MetaDrive rather than a procedurally generated level seed, and scenes are scored by a positive-clamped GAE signal instead of PLR's usual advantage magnitude—so the replay buffer prioritizes scenes the policy is still improving on rather than ones it reliably crashes in. PLR-trained agents beat those trained without it with p < 0.05, winning 21 of 30 tested training seeds.",
     stack: ["Python", "Reinforcement Learning", "PPO", "Autonomous Driving"],
     githubUrl: "https://github.com/vitgruib/SIPACL",
     imageSrc: "/projects/sipacl.png",
