@@ -42,7 +42,7 @@ export const projects: Project[] = [
     slug: "attrpred",
     title: "Do Face Embeddings Predict Attractiveness?",
     description:
-      "Benchmarked 11 face-embedding families (deep identity CNNs, classical methods, CLIP, DINOv2) against 3 human attractiveness-rating datasets using frozen embeddings and ridge regression. Found that embeddings trained to capture identity did consistently worse at predicting attractiveness than those that were not, pointing to a tradeoff between pose invariance and attractiveness predictivity.",
+      "Benchmarked 11 face-embedding families (deep identity CNNs, classical methods, CLIP, DINOv2) against 3 human attractiveness-rating datasets totaling ~7,800 rated faces, using frozen embeddings and ridge regression. Found that embeddings trained to capture identity did consistently worse at predicting attractiveness than those that were not, pointing to a tradeoff between pose invariance and attractiveness predictivity. CLIP led every dataset (r = 0.94 on SCUT-FBP5500), while Fisherface—the most aggressively identity-separating method tested—finished last at a mean r = 0.32.",
     stack: ["Python", "PyTorch", "scikit-learn", "Computer Vision"],
     githubUrl: "https://github.com/vitgruib/AttrPred",
     imageSrc: "/projects/attrpred.png",
