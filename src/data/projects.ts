@@ -35,6 +35,7 @@ export const projects: Project[] = [
     description:
       "Prioritized level replay modifications to standard PPO reinforcement learning algorithms using autonomous driving agents. Prioritized level replay trained RL agents beat those trained without it with p < 0.05 and win in 21 of 30 tested training seeds.",
     stack: ["Python", "Reinforcement Learning", "PPO", "Autonomous Driving"],
+    githubUrl: "https://github.com/vitgruib/SIPACL",
     imageSrc: "/projects/sipacl.png",
     category: "research",
   },
