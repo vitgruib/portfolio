@@ -50,16 +50,6 @@ export function ProjectCard({ project }: Props) {
             {project.description}
           </p>
         </div>
-        {project.impact && (
-          <div className="border-l-2 border-boba-accent/45 pl-3">
-            <span className="block font-mono text-[9px] font-semibold uppercase tracking-wide text-boba-accent">
-              Impact
-            </span>
-            <p className="text-xs leading-relaxed text-boba-mocha">
-              {project.impact}
-            </p>
-          </div>
-        )}
         <ul className="flex flex-wrap gap-1.5" aria-label="Tech stack">
           {project.stack.map((tag) => (
             <li key={tag}>
