@@ -5,6 +5,8 @@ export type Project = {
   slug: string;
   title: string;
   description: string;
+  /** One-line outcome: what the project actually achieved or shipped. */
+  impact?: string;
   stack: string[];
   status?: ProjectStatus;
   githubUrl?: string;
@@ -21,7 +23,8 @@ export const projects: Project[] = [
     slug: "metabolomics-pasc",
     title: "Metabolomics-Based ML Diagnostics of PASC",
     description:
-      "Machine learning pipeline for diagnosing Post-Acute Sequelae of SARS-CoV-2 Infection (Long COVID) using metabolomic data. Proposes a novel method for exclusionary diagnosis utilizing molecular descriptors calculated with E-Dragon. First-author paper published in Metabolites.",
+      "Machine learning pipeline for diagnosing Post-Acute Sequelae of SARS-CoV-2 Infection (Long COVID) using metabolomic data. A proof of concept that structural molecular descriptors calculated with E-Dragon can stand in for raw metabolite abundances as model features, letting structure-derived chemistry drive the classifier.",
+    impact: "First-author paper published in Metabolites (MDPI).",
     stack: ["Python", "Machine Learning", "Bioinformatics"],
     githubUrl:
       "https://github.com/Ethanc143/Metabolomics-Based-Machine-Learning-Diagnostics-of-Post-Acute-Sequelae-of-SARS-CoV-2-Infection",
@@ -33,7 +36,9 @@ export const projects: Project[] = [
     slug: "sipacl",
     title: "Prioritized Level Replay in RL Driving Environments",
     description:
-      "Prioritized level replay modifications to standard PPO reinforcement learning algorithms using autonomous driving agents. Prioritized level replay trained RL agents beat those trained without it with p < 0.05 and win in 21 of 30 tested training seeds. Code for in-progress research is not open source.",
+      "Prioritized level replay modifications to standard PPO reinforcement learning algorithms using autonomous driving agents, trained and evaluated across 30 seeds against an unmodified PPO baseline.",
+    impact:
+      "PLR-trained agents beat the baseline in 21 of 30 training seeds (p < 0.05).",
     stack: ["Python", "Reinforcement Learning", "PPO", "Autonomous Driving"],
     imageSrc: "/projects/sipacl.png",
     category: "research",
@@ -42,7 +47,9 @@ export const projects: Project[] = [
     slug: "attrpred",
     title: "Do Face Embeddings Predict Attractiveness?",
     description:
-      "Benchmarked 11 face-embedding families (deep identity CNNs, classical methods, CLIP, DINOv2) against 3 human attractiveness-rating datasets using frozen embeddings and ridge regression. Found that embeddings trained to capture identity did consistently worse at predicting attractiveness than those that were not, pointing to a tradeoff between pose invariance and attractiveness predictivity.",
+      "Benchmarked 11 face-embedding families (deep identity CNNs, classical methods, CLIP, DINOv2) against 3 human attractiveness-rating datasets using frozen embeddings and ridge regression.",
+    impact:
+      "Showed identity-trained embeddings predict attractiveness consistently worse than ones that aren't, pointing to a tradeoff between pose invariance and attractiveness predictivity.",
     stack: ["Python", "PyTorch", "scikit-learn", "Computer Vision"],
     githubUrl: "https://github.com/vitgruib/AttrPred",
     imageSrc: "/projects/attrpred.png",
@@ -55,6 +62,7 @@ export const projects: Project[] = [
     title: "Human Benchmark 3D",
     description:
       "Virtual reality edition of classic block-tapping memory tests utilizing blocks of various heights. Uses Firebase to record user performance and provide comparative feedback to other users of the same age bracket.",
+    impact: "1,800+ downloads on SideQuest.",
     stack: ["C#", "Unity", "VR", "Firebase"],
     githubUrl: "https://github.com/Ethanc143/Human-Benchmark-3D",
     liveUrl: "https://sidequestvr.com/app/45060/vr-memory-test",
@@ -65,7 +73,8 @@ export const projects: Project[] = [
     slug: "shambo",
     title: "Shambo",
     description:
-      "Featured five-star extension on the Chrome Web Store. Blocks distracting sites and auto-closes tabs, with support for custom subpaths. Utilizes psychology (optionally) to fight procrastination by leaving snarky comments each time users try to open unproductive sites on their custom blocklist.",
+      "Blocks distracting sites and auto-closes tabs, with support for custom subpaths. Utilizes psychology (optionally) to fight procrastination by leaving snarky comments each time users try to open unproductive sites on their custom blocklist.",
+    impact: "Featured five-star extension on the Chrome Web Store.",
     stack: ["JavaScript", "Chrome MV3"],
     githubUrl: "https://github.com/vitgruib/shambo",
     liveUrl:
@@ -77,7 +86,8 @@ export const projects: Project[] = [
     slug: "todo",
     title: "Toto Simple",
     description:
-      "Five-star Chrome Web Store extension designed around minimizing friction, with proactive reminders, one-click snoozing, urgent-task flags, and cloud sync. Originally built around AI task organization, but it made everything cluttered. An important lesson that AI doesn't belong in everything.",
+      "Task manager designed around minimizing friction, with proactive reminders, one-click snoozing, urgent-task flags, and cloud sync. Originally built around AI task organization, but it made everything cluttered. An important lesson that AI doesn't belong in everything.",
+    impact: "Five-star rated on the Chrome Web Store.",
     stack: ["TypeScript", "React", "Chrome MV3"],
     githubUrl: "https://github.com/vitgruib/todo",
     liveUrl:
@@ -91,7 +101,9 @@ export const projects: Project[] = [
     slug: "dads",
     title: "DADS: Distraction-Aware Driving Simulator",
     description:
-      "Winning submission to the Games for Change Game Jam in the 'Own the Road' category. A driving game that warns about the dangers of distracted driving by making users contend with simulated distractions while they try to drive safely on the road. Features summaries of risky driving caused by distracted driving.",
+      "A driving game that warns about the dangers of distracted driving by making users contend with simulated distractions while they try to drive safely on the road. Features summaries of risky driving caused by distracted driving.",
+    impact:
+      "Winning submission in the 'Own the Road' category at the Games for Change Game Jam.",
     stack: ["C#", "Unity"],
     githubUrl: "https://github.com/Ethanc143/gamejam",
     liveUrl: "https://kyozen1.itch.io/dads-distraction-aware-driving-simulator",
