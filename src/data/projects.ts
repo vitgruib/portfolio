@@ -21,7 +21,7 @@ export const projects: Project[] = [
     slug: "metabolomics-pasc",
     title: "Metabolomics-Based ML Diagnostics of PASC",
     description:
-      "Machine learning pipeline for diagnosing Post-Acute Sequelae of SARS-CoV-2 Infection (Long COVID) using metabolomic data. A proof of concept that molecular descriptors calculated using E-Dragon can work to build assay-agnostic diagnostic algorithms with disease differentiating power. First-author paper published in Metabolites.",
+      "Machine learning pipeline for diagnosing Post-Acute Sequelae of SARS-CoV-2 Infection (Long COVID) using metabolomic data. A proof of concept that molecular descriptors calculated using E-Dragon can work to build assay-agnostic diagnostic algorithms with disease differentiating power. Differentiates PASC from 4 of the 5 PASC-similar diseases tested (ME/CFS, Lyme disease, POTS, and IBS), with only fibromyalgia proving indistinguishable. First-author paper published in Metabolites.",
     stack: ["Python", "Machine Learning", "Bioinformatics"],
     githubUrl:
       "https://github.com/Ethanc143/Metabolomics-Based-Machine-Learning-Diagnostics-of-Post-Acute-Sequelae-of-SARS-CoV-2-Infection",
