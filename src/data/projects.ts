@@ -52,6 +52,16 @@ export const projects: Project[] = [
 
   // Tools
   {
+    slug: "anchor-lines",
+    title: "Anchor Lines",
+    description:
+      "Google AI-powered document intelligence app that transforms dense financial-aid documents and syllabi into clear, decision-ready summaries. Every insight stays anchored to the original source, with direct citations that make claims easy to trace and verify through a sleek, modern interface designed to support an expanding range of document types.",
+    stack: ["TypeScript", "Next.js", "Gemini", "Document AI"],
+    githubUrl: "https://github.com/vitgruib/Anchor-Line",
+    imageSrc: "/projects/anchor-line.png",
+    category: "tools",
+  },
+  {
     slug: "human-benchmark-3d",
     title: "Human Benchmark 3D",
     description:
