@@ -56,7 +56,7 @@ export const projects: Project[] = [
     title: "Anchor Lines",
     description:
       "Google AI-powered document intelligence app that transforms dense financial-aid documents and syllabi into clear, decision-ready summaries. Every insight stays anchored to the original source, with direct citations that make claims easy to trace and verify through a sleek, modern interface designed to support an expanding range of document types.",
-    stack: ["TypeScript", "Next.js", "Gemini", "Document AI"],
+    stack: ["TypeScript", "Next.js", "Gemini", "NLP"],
     githubUrl: "https://github.com/vitgruib/Anchor-Line",
     imageSrc: "/projects/anchor-line.png",
     category: "tools",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     title: "Shambo",
     description:
       "Featured five-star extension on the Chrome Web Store. Blocks distracting sites and auto-closes tabs, with support for custom subpaths. Utilizes psychology (optionally) to fight procrastination by leaving snarky comments each time users try to open unproductive sites on their custom blocklist.",
-    stack: ["JavaScript", "Chrome MV3"],
+    stack: ["JavaScript", "Chrome Extensions"],
     githubUrl: "https://github.com/vitgruib/shambo",
     liveUrl:
       "https://chromewebstore.google.com/detail/shambo-%E2%80%94-website-blocker/nnjocfponpkmpkldmkfalljmacbbjkao",
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     title: "Toto Simple",
     description:
       "Five-star Chrome Web Store extension designed around minimizing friction, with proactive reminders, one-click snoozing, urgent-task flags, and cloud sync. Originally built around AI task organization, but it made everything cluttered. An important lesson that AI doesn't belong in everything.",
-    stack: ["TypeScript", "React", "Chrome MV3"],
+    stack: ["TypeScript", "React", "Chrome Extensions"],
     githubUrl: "https://github.com/vitgruib/todo",
     liveUrl:
       "https://chromewebstore.google.com/detail/toto-simple-todo-due-remi/glnmgmemmaedcgmnbbipllpfikpnmbjl",
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     title: "Spider Party",
     description:
       "Web version of Party Box (see what I did there). Free party games that run on any browser on mobile or laptop. Minimizing barriers further: no signup, no paywalls, no ads, no install—just a link.",
-    stack: ["JavaScript", "HTML", "CSS"],
+    stack: ["JavaScript"],
     githubUrl: "https://github.com/vitgruib/spider-party",
     liveUrl: "https://vitgruib.github.io/spider-party/",
     imageSrc: "/projects/spider-party.png",
