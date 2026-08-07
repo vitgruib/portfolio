@@ -56,7 +56,7 @@ export const projects: Project[] = [
     title: "Anchor Lines",
     description:
       "Google AI-powered document intelligence app that transforms dense financial-aid documents and syllabi into clear, decision-ready summaries. Every insight stays anchored to the original source, with direct citations that make claims easy to trace and verify through a sleek, modern interface designed to support an expanding range of document types.",
-    stack: ["TypeScript", "Next.js", "Gemini", "NLP"],
+    stack: ["TypeScript", "Next.js", "Gemini"],
     githubUrl: "https://github.com/vitgruib/Anchor-Line",
     imageSrc: "/projects/anchor-line.png",
     category: "tools",
